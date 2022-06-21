@@ -1,0 +1,4134 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = {
+	ScreenGui = Instance.new("ScreenGui"),
+	Frame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	UIGradient = Instance.new("UIGradient"),
+	TextLabel = Instance.new("TextLabel"),
+	Spawning = Instance.new("TextButton"),
+	Gradient = Instance.new("ImageLabel"),
+	UICorner_2 = Instance.new("UICorner"),
+	UIGradient_2 = Instance.new("UIGradient"),
+	Money = Instance.new("TextButton"),
+	Gradient_2 = Instance.new("ImageLabel"),
+	UICorner_3 = Instance.new("UICorner"),
+	UIGradient_3 = Instance.new("UIGradient"),
+	Badges = Instance.new("TextButton"),
+	Gradient_3 = Instance.new("ImageLabel"),
+	UICorner_4 = Instance.new("UICorner"),
+	UIGradient_4 = Instance.new("UIGradient"),
+	Settings = Instance.new("TextButton"),
+	Gradient_4 = Instance.new("ImageLabel"),
+	UICorner_5 = Instance.new("UICorner"),
+	UIGradient_5 = Instance.new("UIGradient"),
+	Main = Instance.new("TextButton"),
+	Gradient_5 = Instance.new("ImageLabel"),
+	UICorner_6 = Instance.new("UICorner"),
+	UIGradient_6 = Instance.new("UIGradient"),
+	Stuff = Instance.new("ImageLabel"),
+	UIGradient_7 = Instance.new("UIGradient"),
+	Money_2 = Instance.new("ScrollingFrame"),
+	TextButton = Instance.new("TextButton"),
+	Effects = Instance.new("Folder"),
+	Click = Instance.new("ImageLabel"),
+	Follow = Instance.new("ImageLabel"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	more_vert = Instance.new("ImageButton"),
+	UIGradient_8 = Instance.new("UIGradient"),
+	touch_app = Instance.new("ImageButton"),
+	UIGradient_9 = Instance.new("UIGradient"),
+	UIGradient_10 = Instance.new("UIGradient"),
+	TextButton_2 = Instance.new("TextButton"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UIGradient_11 = Instance.new("UIGradient"),
+	close = Instance.new("ImageButton"),
+	Shadow = Instance.new("ImageLabel"),
+	Amount = Instance.new("TextBox"),
+	TextBox_Roundify_2px = Instance.new("ImageLabel"),
+	UIGradient_12 = Instance.new("UIGradient"),
+	Badges_2 = Instance.new("ScrollingFrame"),
+	TextButton_3 = Instance.new("TextButton"),
+	Effects_2 = Instance.new("Folder"),
+	Click_2 = Instance.new("ImageLabel"),
+	Follow_2 = Instance.new("ImageLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	more_vert_2 = Instance.new("ImageButton"),
+	UIGradient_13 = Instance.new("UIGradient"),
+	touch_app_2 = Instance.new("ImageButton"),
+	UIGradient_14 = Instance.new("UIGradient"),
+	UIGradient_15 = Instance.new("UIGradient"),
+	TextButton_4 = Instance.new("TextButton"),
+	GetBadges = Instance.new("TextLabel"),
+	UIGradient_16 = Instance.new("UIGradient"),
+	BadgesInfo = Instance.new("TextBox"),
+	TextBox_Roundify_2px_2 = Instance.new("ImageLabel"),
+	UIGradient_17 = Instance.new("UIGradient"),
+	Settings_2 = Instance.new("ScrollingFrame"),
+	TextButton_5 = Instance.new("TextButton"),
+	Effects_3 = Instance.new("Folder"),
+	Click_3 = Instance.new("ImageLabel"),
+	Follow_3 = Instance.new("ImageLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	more_vert_3 = Instance.new("ImageButton"),
+	UIGradient_18 = Instance.new("UIGradient"),
+	touch_app_3 = Instance.new("ImageButton"),
+	UIGradient_19 = Instance.new("UIGradient"),
+	UIGradient_20 = Instance.new("UIGradient"),
+	TextButton_6 = Instance.new("TextButton"),
+	Settings_3 = Instance.new("TextLabel"),
+	UIGradient_21 = Instance.new("UIGradient"),
+	SFXOFF = Instance.new("TextBox"),
+	TextBox_Roundify_2px_3 = Instance.new("ImageLabel"),
+	UIGradient_22 = Instance.new("UIGradient"),
+	Main_2 = Instance.new("ScrollingFrame"),
+	TextButton_7 = Instance.new("TextButton"),
+	Effects_4 = Instance.new("Folder"),
+	Click_4 = Instance.new("ImageLabel"),
+	Follow_4 = Instance.new("ImageLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	more_vert_4 = Instance.new("ImageButton"),
+	UIGradient_23 = Instance.new("UIGradient"),
+	touch_app_4 = Instance.new("ImageButton"),
+	UIGradient_24 = Instance.new("UIGradient"),
+	UIGradient_25 = Instance.new("UIGradient"),
+	TextButton_8 = Instance.new("TextButton"),
+	Main_3 = Instance.new("TextLabel"),
+	UIGradient_26 = Instance.new("UIGradient"),
+	TextButton_9 = Instance.new("TextButton"),
+	Effects_5 = Instance.new("Folder"),
+	Click_5 = Instance.new("ImageLabel"),
+	Follow_5 = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	more_vert_5 = Instance.new("ImageButton"),
+	UIGradient_27 = Instance.new("UIGradient"),
+	touch_app_5 = Instance.new("ImageButton"),
+	UIGradient_28 = Instance.new("UIGradient"),
+	UIGradient_29 = Instance.new("UIGradient"),
+	HealParty = Instance.new("TextBox"),
+	TextBox_Roundify_2px_4 = Instance.new("ImageLabel"),
+	UIGradient_30 = Instance.new("UIGradient"),
+	MaxPokedex = Instance.new("TextBox"),
+	TextBox_Roundify_2px_5 = Instance.new("ImageLabel"),
+	UIGradient_31 = Instance.new("UIGradient"),
+	Spawning_2 = Instance.new("ScrollingFrame"),
+	TextButton_10 = Instance.new("TextButton"),
+	Effects_6 = Instance.new("Folder"),
+	Click_6 = Instance.new("ImageLabel"),
+	Follow_6 = Instance.new("ImageLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	more_vert_6 = Instance.new("ImageButton"),
+	UIGradient_32 = Instance.new("UIGradient"),
+	touch_app_6 = Instance.new("ImageButton"),
+	UIGradient_33 = Instance.new("UIGradient"),
+	UIGradient_34 = Instance.new("UIGradient"),
+	TextButton_11 = Instance.new("TextButton"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	UIGradient_35 = Instance.new("UIGradient"),
+	TextButton_12 = Instance.new("TextButton"),
+	Effects_7 = Instance.new("Folder"),
+	Click_7 = Instance.new("ImageLabel"),
+	Follow_7 = Instance.new("ImageLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	more_vert_7 = Instance.new("ImageButton"),
+	UIGradient_36 = Instance.new("UIGradient"),
+	touch_app_7 = Instance.new("ImageButton"),
+	UIGradient_37 = Instance.new("UIGradient"),
+	UIGradient_38 = Instance.new("UIGradient"),
+	Spawner = Instance.new("ScrollingFrame"),
+	TextButton_13 = Instance.new("TextButton"),
+	Effects_8 = Instance.new("Folder"),
+	Click_8 = Instance.new("ImageLabel"),
+	Follow_8 = Instance.new("ImageLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	more_vert_8 = Instance.new("ImageButton"),
+	UIGradient_39 = Instance.new("UIGradient"),
+	touch_app_8 = Instance.new("ImageButton"),
+	UIGradient_40 = Instance.new("UIGradient"),
+	UIGradient_41 = Instance.new("UIGradient"),
+	TextButton_14 = Instance.new("TextButton"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UIGradient_42 = Instance.new("UIGradient"),
+	TextButton_15 = Instance.new("TextButton"),
+	Effects_9 = Instance.new("Folder"),
+	Click_9 = Instance.new("ImageLabel"),
+	Follow_9 = Instance.new("ImageLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	more_vert_9 = Instance.new("ImageButton"),
+	UIGradient_43 = Instance.new("UIGradient"),
+	touch_app_9 = Instance.new("ImageButton"),
+	UIGradient_44 = Instance.new("UIGradient"),
+	UIGradient_45 = Instance.new("UIGradient"),
+	TextButton_16 = Instance.new("TextButton"),
+	Effects_10 = Instance.new("Folder"),
+	Click_10 = Instance.new("ImageLabel"),
+	Follow_10 = Instance.new("ImageLabel"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	more_vert_10 = Instance.new("ImageButton"),
+	UIGradient_46 = Instance.new("UIGradient"),
+	touch_app_10 = Instance.new("ImageButton"),
+	UIGradient_47 = Instance.new("UIGradient"),
+	UIGradient_48 = Instance.new("UIGradient"),
+	TextButton_17 = Instance.new("TextButton"),
+	Effects_11 = Instance.new("Folder"),
+	Click_11 = Instance.new("ImageLabel"),
+	Follow_11 = Instance.new("ImageLabel"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	more_vert_11 = Instance.new("ImageButton"),
+	UIGradient_49 = Instance.new("UIGradient"),
+	touch_app_11 = Instance.new("ImageButton"),
+	UIGradient_50 = Instance.new("UIGradient"),
+	UIGradient_51 = Instance.new("UIGradient"),
+	TextButton_18 = Instance.new("TextButton"),
+	Effects_12 = Instance.new("Folder"),
+	Click_12 = Instance.new("ImageLabel"),
+	Follow_12 = Instance.new("ImageLabel"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	more_vert_12 = Instance.new("ImageButton"),
+	UIGradient_52 = Instance.new("UIGradient"),
+	touch_app_12 = Instance.new("ImageButton"),
+	UIGradient_53 = Instance.new("UIGradient"),
+	UIGradient_54 = Instance.new("UIGradient"),
+	TextButton_19 = Instance.new("TextButton"),
+	Effects_13 = Instance.new("Folder"),
+	Click_13 = Instance.new("ImageLabel"),
+	Follow_13 = Instance.new("ImageLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	more_vert_13 = Instance.new("ImageButton"),
+	UIGradient_55 = Instance.new("UIGradient"),
+	touch_app_13 = Instance.new("ImageButton"),
+	UIGradient_56 = Instance.new("UIGradient"),
+	UIGradient_57 = Instance.new("UIGradient"),
+	TextButton_20 = Instance.new("TextButton"),
+	Effects_14 = Instance.new("Folder"),
+	Click_14 = Instance.new("ImageLabel"),
+	Follow_14 = Instance.new("ImageLabel"),
+	TextLabel_18 = Instance.new("TextLabel"),
+	more_vert_14 = Instance.new("ImageButton"),
+	UIGradient_58 = Instance.new("UIGradient"),
+	touch_app_14 = Instance.new("ImageButton"),
+	UIGradient_59 = Instance.new("UIGradient"),
+	UIGradient_60 = Instance.new("UIGradient"),
+	TextButton_21 = Instance.new("TextButton"),
+	Effects_15 = Instance.new("Folder"),
+	Click_15 = Instance.new("ImageLabel"),
+	Follow_15 = Instance.new("ImageLabel"),
+	TextLabel_19 = Instance.new("TextLabel"),
+	more_vert_15 = Instance.new("ImageButton"),
+	UIGradient_61 = Instance.new("UIGradient"),
+	touch_app_15 = Instance.new("ImageButton"),
+	UIGradient_62 = Instance.new("UIGradient"),
+	UIGradient_63 = Instance.new("UIGradient"),
+	TextButton_22 = Instance.new("TextButton"),
+	Effects_16 = Instance.new("Folder"),
+	Click_16 = Instance.new("ImageLabel"),
+	Follow_16 = Instance.new("ImageLabel"),
+	TextLabel_20 = Instance.new("TextLabel"),
+	more_vert_16 = Instance.new("ImageButton"),
+	UIGradient_64 = Instance.new("UIGradient"),
+	touch_app_16 = Instance.new("ImageButton"),
+	UIGradient_65 = Instance.new("UIGradient"),
+	UIGradient_66 = Instance.new("UIGradient"),
+	Pokemon = Instance.new("TextBox"),
+	TextBox_Roundify_2px_6 = Instance.new("ImageLabel"),
+	UIGradient_67 = Instance.new("UIGradient"),
+	Level = Instance.new("TextBox"),
+	TextBox_Roundify_2px_7 = Instance.new("ImageLabel"),
+	UIGradient_68 = Instance.new("UIGradient"),
+	Nature = Instance.new("TextBox"),
+	TextBox_Roundify_2px_8 = Instance.new("ImageLabel"),
+	UIGradient_69 = Instance.new("UIGradient"),
+	Pokeball = Instance.new("TextBox"),
+	TextBox_Roundify_2px_9 = Instance.new("ImageLabel"),
+	UIGradient_70 = Instance.new("UIGradient"),
+	Shiny = Instance.new("TextBox"),
+	TextBox_Roundify_2px_10 = Instance.new("ImageLabel"),
+	UIGradient_71 = Instance.new("UIGradient"),
+	Aura = Instance.new("TextBox"),
+	TextBox_Roundify_2px_11 = Instance.new("ImageLabel"),
+	UIGradient_72 = Instance.new("UIGradient"),
+	Player = Instance.new("TextBox"),
+	TextBox_Roundify_2px_12 = Instance.new("ImageLabel"),
+	UIGradient_73 = Instance.new("UIGradient"),
+	SpawnInfo = Instance.new("TextBox"),
+	TextBox_Roundify_2px_13 = Instance.new("ImageLabel"),
+	UIGradient_74 = Instance.new("UIGradient"),
+	PokeItem = Instance.new("TextBox"),
+	TextBox_Roundify_2px_14 = Instance.new("ImageLabel"),
+	UIGradient_75 = Instance.new("UIGradient"),
+	Item = Instance.new("TextBox"),
+	TextBox_Roundify_2px_15 = Instance.new("ImageLabel"),
+	UIGradient_76 = Instance.new("UIGradient"),
+	OT = Instance.new("TextBox"),
+	TextBox_Roundify_2px_16 = Instance.new("ImageLabel"),
+	UIGradient_77 = Instance.new("UIGradient"),
+	TextLabel_21 = Instance.new("TextLabel"),
+}
+
+--Properties:
+
+ScreenGui.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.Frame.Parent = ScreenGui.ScreenGui
+ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 190)
+ScreenGui.Frame.Position = UDim2.new(0.308854163, 0, 0.338178396, 0)
+ScreenGui.Frame.Size = UDim2.new(0, 497, 0, 307)
+
+ScreenGui.UICorner.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner.Parent = ScreenGui.Frame
+
+ScreenGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 143, 231))}
+ScreenGui.UIGradient.Parent = ScreenGui.Frame
+
+ScreenGui.TextLabel.Parent = ScreenGui.Frame
+ScreenGui.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel.BackgroundTransparency = 1.000
+ScreenGui.TextLabel.Position = UDim2.new(0.01171875, 0, 0, 0)
+ScreenGui.TextLabel.Size = UDim2.new(0, 144, 0, 31)
+ScreenGui.TextLabel.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel.Text = "Project Pokemon"
+ScreenGui.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel.TextScaled = true
+ScreenGui.TextLabel.TextSize = 14.000
+ScreenGui.TextLabel.TextWrapped = true
+ScreenGui.TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Spawning.Name = "Spawning"
+ScreenGui.Spawning.Parent = ScreenGui.Frame
+ScreenGui.Spawning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Spawning.BackgroundTransparency = 1.000
+ScreenGui.Spawning.Position = UDim2.new(0.0157428943, 0, 0.315960914, 0)
+ScreenGui.Spawning.Size = UDim2.new(0, 157, 0, 27)
+ScreenGui.Spawning.ZIndex = 2
+ScreenGui.Spawning.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Spawning.Text = "Spawning"
+ScreenGui.Spawning.TextColor3 = Color3.fromRGB(182, 182, 182)
+ScreenGui.Spawning.TextScaled = true
+ScreenGui.Spawning.TextSize = 14.000
+ScreenGui.Spawning.TextWrapped = true
+
+ScreenGui.Gradient.Name = "Gradient"
+ScreenGui.Gradient.Parent = ScreenGui.Spawning
+ScreenGui.Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Gradient.BackgroundTransparency = 1.000
+ScreenGui.Gradient.Position = UDim2.new(0.0268076509, 0, 0, 0)
+ScreenGui.Gradient.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.Gradient.Visible = false
+ScreenGui.Gradient.Image = "rbxassetid://3570695787"
+ScreenGui.Gradient.ImageTransparency = 0.500
+ScreenGui.Gradient.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Gradient.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Gradient.SliceScale = 0.167
+
+ScreenGui.UICorner_2.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner_2.Parent = ScreenGui.Gradient
+
+ScreenGui.UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_2.Parent = ScreenGui.Gradient
+
+ScreenGui.Money.Name = "Money"
+ScreenGui.Money.Parent = ScreenGui.Frame
+ScreenGui.Money.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Money.BackgroundTransparency = 1.000
+ScreenGui.Money.Position = UDim2.new(0.0157428943, 0, 0.433224738, 0)
+ScreenGui.Money.Size = UDim2.new(0, 157, 0, 27)
+ScreenGui.Money.ZIndex = 2
+ScreenGui.Money.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Money.Text = "Money"
+ScreenGui.Money.TextColor3 = Color3.fromRGB(182, 182, 182)
+ScreenGui.Money.TextScaled = true
+ScreenGui.Money.TextSize = 14.000
+ScreenGui.Money.TextWrapped = true
+
+ScreenGui.Gradient_2.Name = "Gradient"
+ScreenGui.Gradient_2.Parent = ScreenGui.Money
+ScreenGui.Gradient_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Gradient_2.BackgroundTransparency = 1.000
+ScreenGui.Gradient_2.Position = UDim2.new(0.0268076509, 0, 0, 0)
+ScreenGui.Gradient_2.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.Gradient_2.Visible = false
+ScreenGui.Gradient_2.Image = "rbxassetid://3570695787"
+ScreenGui.Gradient_2.ImageTransparency = 0.500
+ScreenGui.Gradient_2.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Gradient_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Gradient_2.SliceScale = 0.167
+
+ScreenGui.UICorner_3.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner_3.Parent = ScreenGui.Gradient_2
+
+ScreenGui.UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_3.Parent = ScreenGui.Gradient_2
+
+ScreenGui.Badges.Name = "Badges"
+ScreenGui.Badges.Parent = ScreenGui.Frame
+ScreenGui.Badges.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Badges.BackgroundTransparency = 1.000
+ScreenGui.Badges.Position = UDim2.new(0.0157428943, 0, 0.547231257, 0)
+ScreenGui.Badges.Size = UDim2.new(0, 157, 0, 27)
+ScreenGui.Badges.ZIndex = 2
+ScreenGui.Badges.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Badges.Text = "Badges"
+ScreenGui.Badges.TextColor3 = Color3.fromRGB(182, 182, 182)
+ScreenGui.Badges.TextScaled = true
+ScreenGui.Badges.TextSize = 14.000
+ScreenGui.Badges.TextWrapped = true
+
+ScreenGui.Gradient_3.Name = "Gradient"
+ScreenGui.Gradient_3.Parent = ScreenGui.Badges
+ScreenGui.Gradient_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Gradient_3.BackgroundTransparency = 1.000
+ScreenGui.Gradient_3.Position = UDim2.new(0.0268076509, 0, 0, 0)
+ScreenGui.Gradient_3.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.Gradient_3.Visible = false
+ScreenGui.Gradient_3.Image = "rbxassetid://3570695787"
+ScreenGui.Gradient_3.ImageTransparency = 0.500
+ScreenGui.Gradient_3.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Gradient_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Gradient_3.SliceScale = 0.167
+
+ScreenGui.UICorner_4.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner_4.Parent = ScreenGui.Gradient_3
+
+ScreenGui.UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_4.Parent = ScreenGui.Gradient_3
+
+ScreenGui.Settings.Name = "Settings"
+ScreenGui.Settings.Parent = ScreenGui.Frame
+ScreenGui.Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Settings.BackgroundTransparency = 1.000
+ScreenGui.Settings.Position = UDim2.new(0.0177549664, 0, 0.654723108, 0)
+ScreenGui.Settings.Size = UDim2.new(0, 157, 0, 27)
+ScreenGui.Settings.ZIndex = 2
+ScreenGui.Settings.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Settings.Text = "Settings"
+ScreenGui.Settings.TextColor3 = Color3.fromRGB(182, 182, 182)
+ScreenGui.Settings.TextScaled = true
+ScreenGui.Settings.TextSize = 14.000
+ScreenGui.Settings.TextWrapped = true
+
+ScreenGui.Gradient_4.Name = "Gradient"
+ScreenGui.Gradient_4.Parent = ScreenGui.Settings
+ScreenGui.Gradient_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Gradient_4.BackgroundTransparency = 1.000
+ScreenGui.Gradient_4.Position = UDim2.new(0.0268076509, 0, 0, 0)
+ScreenGui.Gradient_4.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.Gradient_4.Visible = false
+ScreenGui.Gradient_4.Image = "rbxassetid://3570695787"
+ScreenGui.Gradient_4.ImageTransparency = 0.500
+ScreenGui.Gradient_4.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Gradient_4.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Gradient_4.SliceScale = 0.167
+
+ScreenGui.UICorner_5.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner_5.Parent = ScreenGui.Gradient_4
+
+ScreenGui.UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_5.Parent = ScreenGui.Gradient_4
+
+ScreenGui.Main.Name = "Main"
+ScreenGui.Main.Parent = ScreenGui.Frame
+ScreenGui.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Main.BackgroundTransparency = 1.000
+ScreenGui.Main.Position = UDim2.new(0.0157428943, 0, 0.205211729, 0)
+ScreenGui.Main.Size = UDim2.new(0, 157, 0, 27)
+ScreenGui.Main.ZIndex = 2
+ScreenGui.Main.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Main.Text = "Main"
+ScreenGui.Main.TextColor3 = Color3.fromRGB(182, 182, 182)
+ScreenGui.Main.TextScaled = true
+ScreenGui.Main.TextSize = 14.000
+ScreenGui.Main.TextWrapped = true
+
+ScreenGui.Gradient_5.Name = "Gradient"
+ScreenGui.Gradient_5.Parent = ScreenGui.Main
+ScreenGui.Gradient_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Gradient_5.BackgroundTransparency = 1.000
+ScreenGui.Gradient_5.Position = UDim2.new(0.0268076509, 0, 0, 0)
+ScreenGui.Gradient_5.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.Gradient_5.Visible = false
+ScreenGui.Gradient_5.Image = "rbxassetid://3570695787"
+ScreenGui.Gradient_5.ImageTransparency = 0.500
+ScreenGui.Gradient_5.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Gradient_5.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Gradient_5.SliceScale = 0.167
+
+ScreenGui.UICorner_6.CornerRadius = UDim.new(0.0399999991, 0)
+ScreenGui.UICorner_6.Parent = ScreenGui.Gradient_5
+
+ScreenGui.UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_6.Parent = ScreenGui.Gradient_5
+
+ScreenGui.Stuff.Name = "Stuff"
+ScreenGui.Stuff.Parent = ScreenGui.Frame
+ScreenGui.Stuff.BackgroundColor3 = Color3.fromRGB(84, 84, 255)
+ScreenGui.Stuff.BackgroundTransparency = 1.000
+ScreenGui.Stuff.Position = UDim2.new(0.334512323, 0, 0.123883404, 0)
+ScreenGui.Stuff.Size = UDim2.new(0, 330, 0, 261)
+ScreenGui.Stuff.Image = "rbxassetid://3570695787"
+ScreenGui.Stuff.ImageColor3 = Color3.fromRGB(28, 28, 88)
+ScreenGui.Stuff.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Stuff.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Stuff.SliceScale = 0.167
+
+ScreenGui.UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_7.Parent = ScreenGui.Stuff
+
+ScreenGui.Money_2.Name = "Money"
+ScreenGui.Money_2.Parent = ScreenGui.Stuff
+ScreenGui.Money_2.Active = true
+ScreenGui.Money_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Money_2.BackgroundTransparency = 1.000
+ScreenGui.Money_2.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Money_2.Visible = false
+ScreenGui.Money_2.BottomImage = ""
+ScreenGui.Money_2.MidImage = ""
+ScreenGui.Money_2.TopImage = ""
+
+ScreenGui.TextButton.Parent = ScreenGui.Money_2
+ScreenGui.TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton.BorderSizePixel = 0
+ScreenGui.TextButton.ClipsDescendants = true
+ScreenGui.TextButton.Position = UDim2.new(0.0161178522, 0, 0.120559663, 0)
+ScreenGui.TextButton.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton.ZIndex = 3
+ScreenGui.TextButton.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton.Text = ""
+ScreenGui.TextButton.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton.TextScaled = true
+ScreenGui.TextButton.TextSize = 14.000
+ScreenGui.TextButton.TextWrapped = true
+ScreenGui.TextButton.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects.Name = "Effects"
+ScreenGui.Effects.Parent = ScreenGui.TextButton
+
+ScreenGui.Click.Name = "Click"
+ScreenGui.Click.Parent = ScreenGui.Effects
+ScreenGui.Click.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click.BackgroundTransparency = 1.000
+ScreenGui.Click.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click.ZIndex = 5
+ScreenGui.Click.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow.Name = "Follow"
+ScreenGui.Follow.Parent = ScreenGui.Effects
+ScreenGui.Follow.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow.BackgroundTransparency = 1.000
+ScreenGui.Follow.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow.Visible = false
+ScreenGui.Follow.ZIndex = 5
+ScreenGui.Follow.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_2.Parent = ScreenGui.TextButton
+ScreenGui.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_2.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_2.Position = UDim2.new(0.0796801969, 0, -0.180776447, 0)
+ScreenGui.TextLabel_2.Size = UDim2.new(0, 73, 0, 27)
+ScreenGui.TextLabel_2.ZIndex = 3
+ScreenGui.TextLabel_2.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_2.Text = "Money"
+ScreenGui.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_2.TextScaled = true
+ScreenGui.TextLabel_2.TextSize = 14.000
+ScreenGui.TextLabel_2.TextWrapped = true
+
+ScreenGui.more_vert.Name = "more_vert"
+ScreenGui.more_vert.Parent = ScreenGui.TextButton
+ScreenGui.more_vert.BackgroundTransparency = 1.000
+ScreenGui.more_vert.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert.ZIndex = 10
+ScreenGui.more_vert.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_8.Parent = ScreenGui.more_vert
+
+ScreenGui.touch_app.Name = "touch_app"
+ScreenGui.touch_app.Parent = ScreenGui.TextButton
+ScreenGui.touch_app.BackgroundTransparency = 1.000
+ScreenGui.touch_app.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app.ZIndex = 10
+ScreenGui.touch_app.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_9.Parent = ScreenGui.touch_app
+
+ScreenGui.UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_10.Parent = ScreenGui.TextButton
+
+ScreenGui.TextButton_2.Parent = ScreenGui.Money_2
+ScreenGui.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_2.BorderSizePixel = 0
+ScreenGui.TextButton_2.ClipsDescendants = true
+ScreenGui.TextButton_2.Position = UDim2.new(0.0161178522, 0, 0.025054045, 0)
+ScreenGui.TextButton_2.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_2.ZIndex = 3
+ScreenGui.TextButton_2.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_2.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_2.Text = ""
+ScreenGui.TextButton_2.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_2.TextScaled = true
+ScreenGui.TextButton_2.TextSize = 14.000
+ScreenGui.TextButton_2.TextWrapped = true
+ScreenGui.TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.TextLabel_3.Parent = ScreenGui.TextButton_2
+ScreenGui.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_3.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_3.Position = UDim2.new(-0.0491481759, 0, -0.127625912, 0)
+ScreenGui.TextLabel_3.Size = UDim2.new(0, 110, 0, 27)
+ScreenGui.TextLabel_3.ZIndex = 3
+ScreenGui.TextLabel_3.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_3.Text = "Get Rich"
+ScreenGui.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_3.TextScaled = true
+ScreenGui.TextLabel_3.TextSize = 14.000
+ScreenGui.TextLabel_3.TextWrapped = true
+
+ScreenGui.UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_11.Parent = ScreenGui.TextButton_2
+
+ScreenGui.close.Name = "close"
+ScreenGui.close.Parent = ScreenGui.Stuff
+ScreenGui.close.BackgroundTransparency = 1.000
+ScreenGui.close.LayoutOrder = 5
+ScreenGui.close.Position = UDim2.new(0.900260389, 0, -0.125382751, 0)
+ScreenGui.close.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.close.ZIndex = 2
+ScreenGui.close.Image = "rbxassetid://3926305904"
+ScreenGui.close.ImageRectOffset = Vector2.new(284, 4)
+ScreenGui.close.ImageRectSize = Vector2.new(24, 24)
+
+ScreenGui.Shadow.Name = "Shadow"
+ScreenGui.Shadow.Parent = ScreenGui.Stuff
+ScreenGui.Shadow.BackgroundColor3 = Color3.fromRGB(84, 84, 255)
+ScreenGui.Shadow.BackgroundTransparency = 1.000
+ScreenGui.Shadow.Position = UDim2.new(0.000331439398, 0, -0.00146881922, 0)
+ScreenGui.Shadow.Size = UDim2.new(0, 329, 0, 261)
+ScreenGui.Shadow.ZIndex = 5
+ScreenGui.Shadow.Image = "rbxassetid://3570695787"
+ScreenGui.Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Shadow.ImageTransparency = 1.000
+ScreenGui.Shadow.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Shadow.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Shadow.SliceScale = 0.167
+
+ScreenGui.Amount.Name = "Amount"
+ScreenGui.Amount.Parent = ScreenGui.Stuff
+ScreenGui.Amount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Amount.BackgroundTransparency = 1.000
+ScreenGui.Amount.BorderSizePixel = 0
+ScreenGui.Amount.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Amount.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Amount.Visible = false
+ScreenGui.Amount.ZIndex = 9
+ScreenGui.Amount.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Amount.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Amount.PlaceholderText = "Amount"
+ScreenGui.Amount.Text = ""
+ScreenGui.Amount.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Amount.TextScaled = true
+ScreenGui.Amount.TextSize = 14.000
+ScreenGui.Amount.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px.Parent = ScreenGui.Amount
+ScreenGui.TextBox_Roundify_2px.Active = true
+ScreenGui.TextBox_Roundify_2px.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px.Selectable = true
+ScreenGui.TextBox_Roundify_2px.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px.SliceScale = 0.167
+
+ScreenGui.UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_12.Parent = ScreenGui.TextBox_Roundify_2px
+
+ScreenGui.Badges_2.Name = "Badges"
+ScreenGui.Badges_2.Parent = ScreenGui.Stuff
+ScreenGui.Badges_2.Active = true
+ScreenGui.Badges_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Badges_2.BackgroundTransparency = 1.000
+ScreenGui.Badges_2.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Badges_2.Visible = false
+ScreenGui.Badges_2.BottomImage = ""
+ScreenGui.Badges_2.MidImage = ""
+ScreenGui.Badges_2.TopImage = ""
+
+ScreenGui.TextButton_3.Parent = ScreenGui.Badges_2
+ScreenGui.TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_3.BorderSizePixel = 0
+ScreenGui.TextButton_3.ClipsDescendants = true
+ScreenGui.TextButton_3.Position = UDim2.new(0.0161178522, 0, 0.120559663, 0)
+ScreenGui.TextButton_3.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_3.ZIndex = 3
+ScreenGui.TextButton_3.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_3.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_3.Text = ""
+ScreenGui.TextButton_3.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_3.TextScaled = true
+ScreenGui.TextButton_3.TextSize = 14.000
+ScreenGui.TextButton_3.TextWrapped = true
+ScreenGui.TextButton_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_2.Name = "Effects"
+ScreenGui.Effects_2.Parent = ScreenGui.TextButton_3
+
+ScreenGui.Click_2.Name = "Click"
+ScreenGui.Click_2.Parent = ScreenGui.Effects_2
+ScreenGui.Click_2.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_2.BackgroundTransparency = 1.000
+ScreenGui.Click_2.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_2.ZIndex = 5
+ScreenGui.Click_2.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_2.Name = "Follow"
+ScreenGui.Follow_2.Parent = ScreenGui.Effects_2
+ScreenGui.Follow_2.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_2.BackgroundTransparency = 1.000
+ScreenGui.Follow_2.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_2.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_2.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_2.Visible = false
+ScreenGui.Follow_2.ZIndex = 5
+ScreenGui.Follow_2.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_4.Parent = ScreenGui.TextButton_3
+ScreenGui.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_4.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_4.Position = UDim2.new(0.0796801969, 0, -0.180776447, 0)
+ScreenGui.TextLabel_4.Size = UDim2.new(0, 73, 0, 27)
+ScreenGui.TextLabel_4.ZIndex = 3
+ScreenGui.TextLabel_4.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_4.Text = "Badges"
+ScreenGui.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_4.TextScaled = true
+ScreenGui.TextLabel_4.TextSize = 14.000
+ScreenGui.TextLabel_4.TextWrapped = true
+
+ScreenGui.more_vert_2.Name = "more_vert"
+ScreenGui.more_vert_2.Parent = ScreenGui.TextButton_3
+ScreenGui.more_vert_2.BackgroundTransparency = 1.000
+ScreenGui.more_vert_2.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_2.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_2.ZIndex = 10
+ScreenGui.more_vert_2.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_2.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_2.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_13.Parent = ScreenGui.more_vert_2
+
+ScreenGui.touch_app_2.Name = "touch_app"
+ScreenGui.touch_app_2.Parent = ScreenGui.TextButton_3
+ScreenGui.touch_app_2.BackgroundTransparency = 1.000
+ScreenGui.touch_app_2.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_2.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_2.ZIndex = 10
+ScreenGui.touch_app_2.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_2.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_2.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_14.Parent = ScreenGui.touch_app_2
+
+ScreenGui.UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_15.Parent = ScreenGui.TextButton_3
+
+ScreenGui.TextButton_4.Parent = ScreenGui.Badges_2
+ScreenGui.TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_4.BorderSizePixel = 0
+ScreenGui.TextButton_4.ClipsDescendants = true
+ScreenGui.TextButton_4.Position = UDim2.new(0.0161178522, 0, 0.025054045, 0)
+ScreenGui.TextButton_4.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_4.ZIndex = 3
+ScreenGui.TextButton_4.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_4.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_4.Text = ""
+ScreenGui.TextButton_4.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_4.TextScaled = true
+ScreenGui.TextButton_4.TextSize = 14.000
+ScreenGui.TextButton_4.TextWrapped = true
+ScreenGui.TextButton_4.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.GetBadges.Name = "Get Badges"
+ScreenGui.GetBadges.Parent = ScreenGui.TextButton_4
+ScreenGui.GetBadges.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.GetBadges.BackgroundTransparency = 1.000
+ScreenGui.GetBadges.Position = UDim2.new(-0.0190974362, 0, -0.113796592, 0)
+ScreenGui.GetBadges.Size = UDim2.new(0, 102, 0, 27)
+ScreenGui.GetBadges.ZIndex = 3
+ScreenGui.GetBadges.Font = Enum.Font.SourceSansSemibold
+ScreenGui.GetBadges.Text = "Get Badges"
+ScreenGui.GetBadges.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.GetBadges.TextScaled = true
+ScreenGui.GetBadges.TextSize = 14.000
+ScreenGui.GetBadges.TextWrapped = true
+
+ScreenGui.UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_16.Parent = ScreenGui.TextButton_4
+
+ScreenGui.BadgesInfo.Name = "BadgesInfo"
+ScreenGui.BadgesInfo.Parent = ScreenGui.Stuff
+ScreenGui.BadgesInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.BadgesInfo.BackgroundTransparency = 1.000
+ScreenGui.BadgesInfo.BorderSizePixel = 0
+ScreenGui.BadgesInfo.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.BadgesInfo.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.BadgesInfo.Visible = false
+ScreenGui.BadgesInfo.ZIndex = 9
+ScreenGui.BadgesInfo.Font = Enum.Font.SourceSansSemibold
+ScreenGui.BadgesInfo.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.BadgesInfo.PlaceholderText = "Gives you all badges"
+ScreenGui.BadgesInfo.Text = ""
+ScreenGui.BadgesInfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.BadgesInfo.TextScaled = true
+ScreenGui.BadgesInfo.TextSize = 14.000
+ScreenGui.BadgesInfo.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_2.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_2.Parent = ScreenGui.BadgesInfo
+ScreenGui.TextBox_Roundify_2px_2.Active = true
+ScreenGui.TextBox_Roundify_2px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_2.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_2.Selectable = true
+ScreenGui.TextBox_Roundify_2px_2.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_2.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_2.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_2.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_2.SliceScale = 0.167
+
+ScreenGui.UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_17.Parent = ScreenGui.TextBox_Roundify_2px_2
+
+ScreenGui.Settings_2.Name = "Settings"
+ScreenGui.Settings_2.Parent = ScreenGui.Stuff
+ScreenGui.Settings_2.Active = true
+ScreenGui.Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Settings_2.BackgroundTransparency = 1.000
+ScreenGui.Settings_2.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Settings_2.Visible = false
+ScreenGui.Settings_2.BottomImage = ""
+ScreenGui.Settings_2.MidImage = ""
+ScreenGui.Settings_2.TopImage = ""
+
+ScreenGui.TextButton_5.Parent = ScreenGui.Settings_2
+ScreenGui.TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_5.BorderSizePixel = 0
+ScreenGui.TextButton_5.ClipsDescendants = true
+ScreenGui.TextButton_5.Position = UDim2.new(0.0161178522, 0, 0.120559663, 0)
+ScreenGui.TextButton_5.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_5.ZIndex = 3
+ScreenGui.TextButton_5.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_5.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_5.Text = ""
+ScreenGui.TextButton_5.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_5.TextScaled = true
+ScreenGui.TextButton_5.TextSize = 14.000
+ScreenGui.TextButton_5.TextWrapped = true
+ScreenGui.TextButton_5.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_3.Name = "Effects"
+ScreenGui.Effects_3.Parent = ScreenGui.TextButton_5
+
+ScreenGui.Click_3.Name = "Click"
+ScreenGui.Click_3.Parent = ScreenGui.Effects_3
+ScreenGui.Click_3.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_3.BackgroundTransparency = 1.000
+ScreenGui.Click_3.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_3.ZIndex = 5
+ScreenGui.Click_3.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_3.Name = "Follow"
+ScreenGui.Follow_3.Parent = ScreenGui.Effects_3
+ScreenGui.Follow_3.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_3.BackgroundTransparency = 1.000
+ScreenGui.Follow_3.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_3.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_3.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_3.Visible = false
+ScreenGui.Follow_3.ZIndex = 5
+ScreenGui.Follow_3.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_5.Parent = ScreenGui.TextButton_5
+ScreenGui.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_5.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_5.Position = UDim2.new(0.0796801969, 0, -0.180776447, 0)
+ScreenGui.TextLabel_5.Size = UDim2.new(0, 73, 0, 27)
+ScreenGui.TextLabel_5.ZIndex = 3
+ScreenGui.TextLabel_5.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_5.Text = "SFX: ON"
+ScreenGui.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_5.TextScaled = true
+ScreenGui.TextLabel_5.TextSize = 14.000
+ScreenGui.TextLabel_5.TextWrapped = true
+
+ScreenGui.more_vert_3.Name = "more_vert"
+ScreenGui.more_vert_3.Parent = ScreenGui.TextButton_5
+ScreenGui.more_vert_3.BackgroundTransparency = 1.000
+ScreenGui.more_vert_3.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_3.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_3.ZIndex = 10
+ScreenGui.more_vert_3.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_3.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_3.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_18.Parent = ScreenGui.more_vert_3
+
+ScreenGui.touch_app_3.Name = "touch_app"
+ScreenGui.touch_app_3.Parent = ScreenGui.TextButton_5
+ScreenGui.touch_app_3.BackgroundTransparency = 1.000
+ScreenGui.touch_app_3.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_3.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_3.ZIndex = 10
+ScreenGui.touch_app_3.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_3.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_3.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_19.Parent = ScreenGui.touch_app_3
+
+ScreenGui.UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_20.Parent = ScreenGui.TextButton_5
+
+ScreenGui.TextButton_6.Parent = ScreenGui.Settings_2
+ScreenGui.TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_6.BorderSizePixel = 0
+ScreenGui.TextButton_6.ClipsDescendants = true
+ScreenGui.TextButton_6.Position = UDim2.new(0.0161178522, 0, 0.025054045, 0)
+ScreenGui.TextButton_6.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_6.ZIndex = 3
+ScreenGui.TextButton_6.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_6.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_6.Text = ""
+ScreenGui.TextButton_6.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_6.TextScaled = true
+ScreenGui.TextButton_6.TextSize = 14.000
+ScreenGui.TextButton_6.TextWrapped = true
+ScreenGui.TextButton_6.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Settings_3.Name = "Settings"
+ScreenGui.Settings_3.Parent = ScreenGui.TextButton_6
+ScreenGui.Settings_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Settings_3.BackgroundTransparency = 1.000
+ScreenGui.Settings_3.Position = UDim2.new(-0.0190974362, 0, -0.113796592, 0)
+ScreenGui.Settings_3.Size = UDim2.new(0, 102, 0, 27)
+ScreenGui.Settings_3.ZIndex = 3
+ScreenGui.Settings_3.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Settings_3.Text = "Settings"
+ScreenGui.Settings_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Settings_3.TextScaled = true
+ScreenGui.Settings_3.TextSize = 14.000
+ScreenGui.Settings_3.TextWrapped = true
+
+ScreenGui.UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_21.Parent = ScreenGui.TextButton_6
+
+ScreenGui.SFXOFF.Name = "SFXOFF"
+ScreenGui.SFXOFF.Parent = ScreenGui.Stuff
+ScreenGui.SFXOFF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SFXOFF.BackgroundTransparency = 1.000
+ScreenGui.SFXOFF.BorderSizePixel = 0
+ScreenGui.SFXOFF.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.SFXOFF.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.SFXOFF.Visible = false
+ScreenGui.SFXOFF.ZIndex = 9
+ScreenGui.SFXOFF.Font = Enum.Font.SourceSansSemibold
+ScreenGui.SFXOFF.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SFXOFF.PlaceholderText = "Disables SFX"
+ScreenGui.SFXOFF.Text = ""
+ScreenGui.SFXOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.SFXOFF.TextScaled = true
+ScreenGui.SFXOFF.TextSize = 14.000
+ScreenGui.SFXOFF.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_3.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_3.Parent = ScreenGui.SFXOFF
+ScreenGui.TextBox_Roundify_2px_3.Active = true
+ScreenGui.TextBox_Roundify_2px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_3.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_3.Selectable = true
+ScreenGui.TextBox_Roundify_2px_3.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_3.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_3.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_3.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_3.SliceScale = 0.167
+
+ScreenGui.UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_22.Parent = ScreenGui.TextBox_Roundify_2px_3
+
+ScreenGui.Main_2.Name = "Main"
+ScreenGui.Main_2.Parent = ScreenGui.Stuff
+ScreenGui.Main_2.Active = true
+ScreenGui.Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Main_2.BackgroundTransparency = 1.000
+ScreenGui.Main_2.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Main_2.BottomImage = ""
+ScreenGui.Main_2.MidImage = ""
+ScreenGui.Main_2.TopImage = ""
+
+ScreenGui.TextButton_7.Parent = ScreenGui.Main_2
+ScreenGui.TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_7.BorderSizePixel = 0
+ScreenGui.TextButton_7.ClipsDescendants = true
+ScreenGui.TextButton_7.Position = UDim2.new(0.0161178522, 0, 0.120559663, 0)
+ScreenGui.TextButton_7.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_7.ZIndex = 3
+ScreenGui.TextButton_7.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_7.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_7.Text = ""
+ScreenGui.TextButton_7.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_7.TextScaled = true
+ScreenGui.TextButton_7.TextSize = 14.000
+ScreenGui.TextButton_7.TextWrapped = true
+ScreenGui.TextButton_7.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_4.Name = "Effects"
+ScreenGui.Effects_4.Parent = ScreenGui.TextButton_7
+
+ScreenGui.Click_4.Name = "Click"
+ScreenGui.Click_4.Parent = ScreenGui.Effects_4
+ScreenGui.Click_4.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_4.BackgroundTransparency = 1.000
+ScreenGui.Click_4.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_4.ZIndex = 5
+ScreenGui.Click_4.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_4.Name = "Follow"
+ScreenGui.Follow_4.Parent = ScreenGui.Effects_4
+ScreenGui.Follow_4.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_4.BackgroundTransparency = 1.000
+ScreenGui.Follow_4.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_4.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_4.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_4.Visible = false
+ScreenGui.Follow_4.ZIndex = 5
+ScreenGui.Follow_4.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_6.Parent = ScreenGui.TextButton_7
+ScreenGui.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_6.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_6.Position = UDim2.new(0.0796801969, 0, -0.180776447, 0)
+ScreenGui.TextLabel_6.Size = UDim2.new(0, 73, 0, 27)
+ScreenGui.TextLabel_6.ZIndex = 3
+ScreenGui.TextLabel_6.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_6.Text = "Heal Party"
+ScreenGui.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_6.TextScaled = true
+ScreenGui.TextLabel_6.TextSize = 14.000
+ScreenGui.TextLabel_6.TextWrapped = true
+
+ScreenGui.more_vert_4.Name = "more_vert"
+ScreenGui.more_vert_4.Parent = ScreenGui.TextButton_7
+ScreenGui.more_vert_4.BackgroundTransparency = 1.000
+ScreenGui.more_vert_4.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_4.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_4.ZIndex = 10
+ScreenGui.more_vert_4.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_4.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_4.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_23.Parent = ScreenGui.more_vert_4
+
+ScreenGui.touch_app_4.Name = "touch_app"
+ScreenGui.touch_app_4.Parent = ScreenGui.TextButton_7
+ScreenGui.touch_app_4.BackgroundTransparency = 1.000
+ScreenGui.touch_app_4.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_4.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_4.ZIndex = 10
+ScreenGui.touch_app_4.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_4.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_4.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_24.Parent = ScreenGui.touch_app_4
+
+ScreenGui.UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_25.Parent = ScreenGui.TextButton_7
+
+ScreenGui.TextButton_8.Parent = ScreenGui.Main_2
+ScreenGui.TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_8.BorderSizePixel = 0
+ScreenGui.TextButton_8.ClipsDescendants = true
+ScreenGui.TextButton_8.Position = UDim2.new(0.0161178522, 0, 0.025054045, 0)
+ScreenGui.TextButton_8.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_8.ZIndex = 3
+ScreenGui.TextButton_8.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_8.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_8.Text = ""
+ScreenGui.TextButton_8.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_8.TextScaled = true
+ScreenGui.TextButton_8.TextSize = 14.000
+ScreenGui.TextButton_8.TextWrapped = true
+ScreenGui.TextButton_8.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Main_3.Name = "Main"
+ScreenGui.Main_3.Parent = ScreenGui.TextButton_8
+ScreenGui.Main_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Main_3.BackgroundTransparency = 1.000
+ScreenGui.Main_3.Position = UDim2.new(-0.0634012371, 0, -0.113796592, 0)
+ScreenGui.Main_3.Size = UDim2.new(0, 102, 0, 27)
+ScreenGui.Main_3.ZIndex = 3
+ScreenGui.Main_3.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Main_3.Text = "Main"
+ScreenGui.Main_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Main_3.TextScaled = true
+ScreenGui.Main_3.TextSize = 14.000
+ScreenGui.Main_3.TextWrapped = true
+
+ScreenGui.UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_26.Parent = ScreenGui.TextButton_8
+
+ScreenGui.TextButton_9.Parent = ScreenGui.Main_2
+ScreenGui.TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_9.BorderSizePixel = 0
+ScreenGui.TextButton_9.ClipsDescendants = true
+ScreenGui.TextButton_9.Position = UDim2.new(0.0161178522, 0, 0.208574653, 0)
+ScreenGui.TextButton_9.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_9.ZIndex = 3
+ScreenGui.TextButton_9.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_9.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_9.Text = ""
+ScreenGui.TextButton_9.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_9.TextScaled = true
+ScreenGui.TextButton_9.TextSize = 14.000
+ScreenGui.TextButton_9.TextWrapped = true
+ScreenGui.TextButton_9.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_5.Name = "Effects"
+ScreenGui.Effects_5.Parent = ScreenGui.TextButton_9
+
+ScreenGui.Click_5.Name = "Click"
+ScreenGui.Click_5.Parent = ScreenGui.Effects_5
+ScreenGui.Click_5.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_5.BackgroundTransparency = 1.000
+ScreenGui.Click_5.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_5.ZIndex = 5
+ScreenGui.Click_5.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_5.Name = "Follow"
+ScreenGui.Follow_5.Parent = ScreenGui.Effects_5
+ScreenGui.Follow_5.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_5.BackgroundTransparency = 1.000
+ScreenGui.Follow_5.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_5.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_5.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_5.Visible = false
+ScreenGui.Follow_5.ZIndex = 5
+ScreenGui.Follow_5.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_7.Parent = ScreenGui.TextButton_9
+ScreenGui.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_7.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_7.Position = UDim2.new(0.0796801969, 0, -0.180776447, 0)
+ScreenGui.TextLabel_7.Size = UDim2.new(0, 73, 0, 27)
+ScreenGui.TextLabel_7.ZIndex = 3
+ScreenGui.TextLabel_7.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_7.Text = "Max Pokedex"
+ScreenGui.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_7.TextScaled = true
+ScreenGui.TextLabel_7.TextSize = 14.000
+ScreenGui.TextLabel_7.TextWrapped = true
+
+ScreenGui.more_vert_5.Name = "more_vert"
+ScreenGui.more_vert_5.Parent = ScreenGui.TextButton_9
+ScreenGui.more_vert_5.BackgroundTransparency = 1.000
+ScreenGui.more_vert_5.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_5.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_5.ZIndex = 10
+ScreenGui.more_vert_5.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_5.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_5.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_27.Parent = ScreenGui.more_vert_5
+
+ScreenGui.touch_app_5.Name = "touch_app"
+ScreenGui.touch_app_5.Parent = ScreenGui.TextButton_9
+ScreenGui.touch_app_5.BackgroundTransparency = 1.000
+ScreenGui.touch_app_5.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_5.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_5.ZIndex = 10
+ScreenGui.touch_app_5.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_5.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_5.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_28.Parent = ScreenGui.touch_app_5
+
+ScreenGui.UIGradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_29.Parent = ScreenGui.TextButton_9
+
+ScreenGui.HealParty.Name = "HealParty"
+ScreenGui.HealParty.Parent = ScreenGui.Stuff
+ScreenGui.HealParty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.HealParty.BackgroundTransparency = 1.000
+ScreenGui.HealParty.BorderSizePixel = 0
+ScreenGui.HealParty.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.HealParty.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.HealParty.Visible = false
+ScreenGui.HealParty.ZIndex = 9
+ScreenGui.HealParty.Font = Enum.Font.SourceSansSemibold
+ScreenGui.HealParty.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.HealParty.PlaceholderText = "Heals Party"
+ScreenGui.HealParty.Text = ""
+ScreenGui.HealParty.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.HealParty.TextScaled = true
+ScreenGui.HealParty.TextSize = 14.000
+ScreenGui.HealParty.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_4.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_4.Parent = ScreenGui.HealParty
+ScreenGui.TextBox_Roundify_2px_4.Active = true
+ScreenGui.TextBox_Roundify_2px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_4.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_4.Selectable = true
+ScreenGui.TextBox_Roundify_2px_4.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_4.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_4.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_4.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_4.SliceScale = 0.167
+
+ScreenGui.UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_30.Parent = ScreenGui.TextBox_Roundify_2px_4
+
+ScreenGui.MaxPokedex.Name = "MaxPokedex"
+ScreenGui.MaxPokedex.Parent = ScreenGui.Stuff
+ScreenGui.MaxPokedex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.MaxPokedex.BackgroundTransparency = 1.000
+ScreenGui.MaxPokedex.BorderSizePixel = 0
+ScreenGui.MaxPokedex.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.MaxPokedex.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.MaxPokedex.Visible = false
+ScreenGui.MaxPokedex.ZIndex = 9
+ScreenGui.MaxPokedex.Font = Enum.Font.SourceSansSemibold
+ScreenGui.MaxPokedex.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.MaxPokedex.PlaceholderText = "Maxes your Pokedex"
+ScreenGui.MaxPokedex.Text = ""
+ScreenGui.MaxPokedex.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.MaxPokedex.TextScaled = true
+ScreenGui.MaxPokedex.TextSize = 14.000
+ScreenGui.MaxPokedex.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_5.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_5.Parent = ScreenGui.MaxPokedex
+ScreenGui.TextBox_Roundify_2px_5.Active = true
+ScreenGui.TextBox_Roundify_2px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_5.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_5.Selectable = true
+ScreenGui.TextBox_Roundify_2px_5.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_5.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_5.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_5.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_5.SliceScale = 0.167
+
+ScreenGui.UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_31.Parent = ScreenGui.TextBox_Roundify_2px_5
+
+ScreenGui.Spawning_2.Name = "Spawning"
+ScreenGui.Spawning_2.Parent = ScreenGui.Stuff
+ScreenGui.Spawning_2.Active = true
+ScreenGui.Spawning_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Spawning_2.BackgroundTransparency = 1.000
+ScreenGui.Spawning_2.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Spawning_2.Visible = false
+ScreenGui.Spawning_2.BottomImage = ""
+ScreenGui.Spawning_2.MidImage = ""
+ScreenGui.Spawning_2.TopImage = ""
+
+ScreenGui.TextButton_10.Parent = ScreenGui.Spawning_2
+ScreenGui.TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_10.BorderSizePixel = 0
+ScreenGui.TextButton_10.ClipsDescendants = true
+ScreenGui.TextButton_10.Position = UDim2.new(0.0161178522, 0, 0.120559663, 0)
+ScreenGui.TextButton_10.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_10.ZIndex = 3
+ScreenGui.TextButton_10.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_10.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_10.Text = ""
+ScreenGui.TextButton_10.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_10.TextScaled = true
+ScreenGui.TextButton_10.TextSize = 14.000
+ScreenGui.TextButton_10.TextWrapped = true
+ScreenGui.TextButton_10.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_6.Name = "Effects"
+ScreenGui.Effects_6.Parent = ScreenGui.TextButton_10
+
+ScreenGui.Click_6.Name = "Click"
+ScreenGui.Click_6.Parent = ScreenGui.Effects_6
+ScreenGui.Click_6.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_6.BackgroundTransparency = 1.000
+ScreenGui.Click_6.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_6.ZIndex = 5
+ScreenGui.Click_6.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_6.Name = "Follow"
+ScreenGui.Follow_6.Parent = ScreenGui.Effects_6
+ScreenGui.Follow_6.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_6.BackgroundTransparency = 1.000
+ScreenGui.Follow_6.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_6.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_6.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_6.Visible = false
+ScreenGui.Follow_6.ZIndex = 5
+ScreenGui.Follow_6.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_8.Parent = ScreenGui.TextButton_10
+ScreenGui.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_8.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_8.Position = UDim2.new(0.0546411499, 0, -0.195807725, 0)
+ScreenGui.TextLabel_8.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.TextLabel_8.ZIndex = 3
+ScreenGui.TextLabel_8.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_8.Text = "Get Pokemon"
+ScreenGui.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_8.TextScaled = true
+ScreenGui.TextLabel_8.TextSize = 14.000
+ScreenGui.TextLabel_8.TextWrapped = true
+
+ScreenGui.more_vert_6.Name = "more_vert"
+ScreenGui.more_vert_6.Parent = ScreenGui.TextButton_10
+ScreenGui.more_vert_6.BackgroundTransparency = 1.000
+ScreenGui.more_vert_6.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_6.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_6.ZIndex = 10
+ScreenGui.more_vert_6.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_6.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_6.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_32.Parent = ScreenGui.more_vert_6
+
+ScreenGui.touch_app_6.Name = "touch_app"
+ScreenGui.touch_app_6.Parent = ScreenGui.TextButton_10
+ScreenGui.touch_app_6.BackgroundTransparency = 1.000
+ScreenGui.touch_app_6.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_6.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_6.ZIndex = 10
+ScreenGui.touch_app_6.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_6.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_6.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_33.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_33.Parent = ScreenGui.touch_app_6
+
+ScreenGui.UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_34.Parent = ScreenGui.TextButton_10
+
+ScreenGui.TextButton_11.Parent = ScreenGui.Spawning_2
+ScreenGui.TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_11.BorderSizePixel = 0
+ScreenGui.TextButton_11.ClipsDescendants = true
+ScreenGui.TextButton_11.Position = UDim2.new(0.0161178522, 0, 0.025054045, 0)
+ScreenGui.TextButton_11.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_11.ZIndex = 3
+ScreenGui.TextButton_11.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_11.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_11.Text = ""
+ScreenGui.TextButton_11.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_11.TextScaled = true
+ScreenGui.TextButton_11.TextSize = 14.000
+ScreenGui.TextButton_11.TextWrapped = true
+ScreenGui.TextButton_11.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.TextLabel_9.Parent = ScreenGui.TextButton_11
+ScreenGui.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_9.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_9.Position = UDim2.new(-0.0156481769, 0, -0.210253641, 0)
+ScreenGui.TextLabel_9.Size = UDim2.new(0, 187, 0, 30)
+ScreenGui.TextLabel_9.ZIndex = 3
+ScreenGui.TextLabel_9.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_9.Text = "Spawning"
+ScreenGui.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_9.TextScaled = true
+ScreenGui.TextLabel_9.TextSize = 14.000
+ScreenGui.TextLabel_9.TextWrapped = true
+ScreenGui.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.UIGradient_35.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_35.Parent = ScreenGui.TextButton_11
+
+ScreenGui.TextButton_12.Parent = ScreenGui.Spawning_2
+ScreenGui.TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_12.BorderSizePixel = 0
+ScreenGui.TextButton_12.ClipsDescendants = true
+ScreenGui.TextButton_12.Position = UDim2.new(0.0161178522, 0, 0.206701964, 0)
+ScreenGui.TextButton_12.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_12.ZIndex = 3
+ScreenGui.TextButton_12.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_12.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_12.Text = ""
+ScreenGui.TextButton_12.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_12.TextScaled = true
+ScreenGui.TextButton_12.TextSize = 14.000
+ScreenGui.TextButton_12.TextWrapped = true
+ScreenGui.TextButton_12.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_7.Name = "Effects"
+ScreenGui.Effects_7.Parent = ScreenGui.TextButton_12
+
+ScreenGui.Click_7.Name = "Click"
+ScreenGui.Click_7.Parent = ScreenGui.Effects_7
+ScreenGui.Click_7.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_7.BackgroundTransparency = 1.000
+ScreenGui.Click_7.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_7.ZIndex = 5
+ScreenGui.Click_7.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_7.Name = "Follow"
+ScreenGui.Follow_7.Parent = ScreenGui.Effects_7
+ScreenGui.Follow_7.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_7.BackgroundTransparency = 1.000
+ScreenGui.Follow_7.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_7.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_7.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_7.Visible = false
+ScreenGui.Follow_7.ZIndex = 5
+ScreenGui.Follow_7.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_10.Parent = ScreenGui.TextButton_12
+ScreenGui.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_10.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_10.Position = UDim2.new(0.054641135, 0, -0.195807725, 0)
+ScreenGui.TextLabel_10.Size = UDim2.new(0, 104, 0, 27)
+ScreenGui.TextLabel_10.ZIndex = 3
+ScreenGui.TextLabel_10.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_10.Text = "Get Item"
+ScreenGui.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_10.TextScaled = true
+ScreenGui.TextLabel_10.TextSize = 14.000
+ScreenGui.TextLabel_10.TextWrapped = true
+
+ScreenGui.more_vert_7.Name = "more_vert"
+ScreenGui.more_vert_7.Parent = ScreenGui.TextButton_12
+ScreenGui.more_vert_7.BackgroundTransparency = 1.000
+ScreenGui.more_vert_7.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_7.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_7.ZIndex = 10
+ScreenGui.more_vert_7.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_7.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_7.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_36.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_36.Parent = ScreenGui.more_vert_7
+
+ScreenGui.touch_app_7.Name = "touch_app"
+ScreenGui.touch_app_7.Parent = ScreenGui.TextButton_12
+ScreenGui.touch_app_7.BackgroundTransparency = 1.000
+ScreenGui.touch_app_7.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_7.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_7.ZIndex = 10
+ScreenGui.touch_app_7.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_7.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_7.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_37.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_37.Parent = ScreenGui.touch_app_7
+
+ScreenGui.UIGradient_38.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_38.Parent = ScreenGui.TextButton_12
+
+ScreenGui.Spawner.Name = "Spawner"
+ScreenGui.Spawner.Parent = ScreenGui.Stuff
+ScreenGui.Spawner.Active = true
+ScreenGui.Spawner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Spawner.BackgroundTransparency = 1.000
+ScreenGui.Spawner.Size = UDim2.new(0, 346, 0, 259)
+ScreenGui.Spawner.Visible = false
+ScreenGui.Spawner.BottomImage = ""
+ScreenGui.Spawner.CanvasPosition = Vector2.new(0, 111)
+ScreenGui.Spawner.MidImage = ""
+ScreenGui.Spawner.TopImage = ""
+
+ScreenGui.TextButton_13.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_13.BorderSizePixel = 0
+ScreenGui.TextButton_13.ClipsDescendants = true
+ScreenGui.TextButton_13.Position = UDim2.new(0.0161178522, 0, 0.114941686, 0)
+ScreenGui.TextButton_13.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_13.ZIndex = 3
+ScreenGui.TextButton_13.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_13.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_13.Text = ""
+ScreenGui.TextButton_13.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_13.TextScaled = true
+ScreenGui.TextButton_13.TextSize = 14.000
+ScreenGui.TextButton_13.TextWrapped = true
+ScreenGui.TextButton_13.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_8.Name = "Effects"
+ScreenGui.Effects_8.Parent = ScreenGui.TextButton_13
+
+ScreenGui.Click_8.Name = "Click"
+ScreenGui.Click_8.Parent = ScreenGui.Effects_8
+ScreenGui.Click_8.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_8.BackgroundTransparency = 1.000
+ScreenGui.Click_8.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_8.ZIndex = 5
+ScreenGui.Click_8.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_8.Name = "Follow"
+ScreenGui.Follow_8.Parent = ScreenGui.Effects_8
+ScreenGui.Follow_8.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_8.BackgroundTransparency = 1.000
+ScreenGui.Follow_8.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_8.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_8.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_8.Visible = false
+ScreenGui.Follow_8.ZIndex = 5
+ScreenGui.Follow_8.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_11.Parent = ScreenGui.TextButton_13
+ScreenGui.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_11.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_11.Position = UDim2.new(0.0799576044, 0, -0.150353178, 0)
+ScreenGui.TextLabel_11.Size = UDim2.new(0, 147, 0, 27)
+ScreenGui.TextLabel_11.ZIndex = 3
+ScreenGui.TextLabel_11.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_11.Text = "Select Pokemon"
+ScreenGui.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_11.TextScaled = true
+ScreenGui.TextLabel_11.TextSize = 14.000
+ScreenGui.TextLabel_11.TextWrapped = true
+
+ScreenGui.more_vert_8.Name = "more_vert"
+ScreenGui.more_vert_8.Parent = ScreenGui.TextButton_13
+ScreenGui.more_vert_8.BackgroundTransparency = 1.000
+ScreenGui.more_vert_8.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_8.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_8.ZIndex = 10
+ScreenGui.more_vert_8.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_8.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_8.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_39.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_39.Parent = ScreenGui.more_vert_8
+
+ScreenGui.touch_app_8.Name = "touch_app"
+ScreenGui.touch_app_8.Parent = ScreenGui.TextButton_13
+ScreenGui.touch_app_8.BackgroundTransparency = 1.000
+ScreenGui.touch_app_8.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_8.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_8.ZIndex = 10
+ScreenGui.touch_app_8.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_8.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_8.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_40.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_40.Parent = ScreenGui.touch_app_8
+
+ScreenGui.UIGradient_41.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_41.Parent = ScreenGui.TextButton_13
+
+ScreenGui.TextButton_14.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_14.BorderSizePixel = 0
+ScreenGui.TextButton_14.ClipsDescendants = true
+ScreenGui.TextButton_14.Position = UDim2.new(0.0161178522, 0, 0.0269267038, 0)
+ScreenGui.TextButton_14.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_14.ZIndex = 3
+ScreenGui.TextButton_14.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_14.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_14.Text = ""
+ScreenGui.TextButton_14.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_14.TextScaled = true
+ScreenGui.TextButton_14.TextSize = 14.000
+ScreenGui.TextButton_14.TextWrapped = true
+ScreenGui.TextButton_14.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.TextLabel_12.Parent = ScreenGui.TextButton_14
+ScreenGui.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_12.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_12.Position = UDim2.new(-0.0156481769, 0, -0.210253641, 0)
+ScreenGui.TextLabel_12.Size = UDim2.new(0, 187, 0, 30)
+ScreenGui.TextLabel_12.ZIndex = 3
+ScreenGui.TextLabel_12.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_12.Text = "Spawner"
+ScreenGui.TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_12.TextScaled = true
+ScreenGui.TextLabel_12.TextSize = 14.000
+ScreenGui.TextLabel_12.TextWrapped = true
+ScreenGui.TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.UIGradient_42.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+ScreenGui.UIGradient_42.Parent = ScreenGui.TextButton_14
+
+ScreenGui.TextButton_15.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_15.BorderSizePixel = 0
+ScreenGui.TextButton_15.ClipsDescendants = true
+ScreenGui.TextButton_15.Position = UDim2.new(0.0161178522, 0, 0.19733867, 0)
+ScreenGui.TextButton_15.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_15.ZIndex = 3
+ScreenGui.TextButton_15.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_15.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_15.Text = ""
+ScreenGui.TextButton_15.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_15.TextScaled = true
+ScreenGui.TextButton_15.TextSize = 14.000
+ScreenGui.TextButton_15.TextWrapped = true
+ScreenGui.TextButton_15.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_9.Name = "Effects"
+ScreenGui.Effects_9.Parent = ScreenGui.TextButton_15
+
+ScreenGui.Click_9.Name = "Click"
+ScreenGui.Click_9.Parent = ScreenGui.Effects_9
+ScreenGui.Click_9.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_9.BackgroundTransparency = 1.000
+ScreenGui.Click_9.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_9.ZIndex = 5
+ScreenGui.Click_9.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_9.Name = "Follow"
+ScreenGui.Follow_9.Parent = ScreenGui.Effects_9
+ScreenGui.Follow_9.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_9.BackgroundTransparency = 1.000
+ScreenGui.Follow_9.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_9.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_9.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_9.Visible = false
+ScreenGui.Follow_9.ZIndex = 5
+ScreenGui.Follow_9.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_13.Parent = ScreenGui.TextButton_15
+ScreenGui.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_13.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_13.Position = UDim2.new(0.0767930299, 0, -0.195807725, 0)
+ScreenGui.TextLabel_13.Size = UDim2.new(0, 104, 0, 27)
+ScreenGui.TextLabel_13.ZIndex = 3
+ScreenGui.TextLabel_13.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_13.Text = "Select Level"
+ScreenGui.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_13.TextScaled = true
+ScreenGui.TextLabel_13.TextSize = 14.000
+ScreenGui.TextLabel_13.TextWrapped = true
+
+ScreenGui.more_vert_9.Name = "more_vert"
+ScreenGui.more_vert_9.Parent = ScreenGui.TextButton_15
+ScreenGui.more_vert_9.BackgroundTransparency = 1.000
+ScreenGui.more_vert_9.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_9.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_9.ZIndex = 10
+ScreenGui.more_vert_9.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_9.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_9.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_43.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_43.Parent = ScreenGui.more_vert_9
+
+ScreenGui.touch_app_9.Name = "touch_app"
+ScreenGui.touch_app_9.Parent = ScreenGui.TextButton_15
+ScreenGui.touch_app_9.BackgroundTransparency = 1.000
+ScreenGui.touch_app_9.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_9.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_9.ZIndex = 10
+ScreenGui.touch_app_9.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_9.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_9.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_44.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_44.Parent = ScreenGui.touch_app_9
+
+ScreenGui.UIGradient_45.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_45.Parent = ScreenGui.TextButton_15
+
+ScreenGui.TextButton_16.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_16.BorderSizePixel = 0
+ScreenGui.TextButton_16.ClipsDescendants = true
+ScreenGui.TextButton_16.Position = UDim2.new(0.0161178522, 0, 0.279735684, 0)
+ScreenGui.TextButton_16.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_16.ZIndex = 3
+ScreenGui.TextButton_16.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_16.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_16.Text = ""
+ScreenGui.TextButton_16.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_16.TextScaled = true
+ScreenGui.TextButton_16.TextSize = 14.000
+ScreenGui.TextButton_16.TextWrapped = true
+ScreenGui.TextButton_16.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_10.Name = "Effects"
+ScreenGui.Effects_10.Parent = ScreenGui.TextButton_16
+
+ScreenGui.Click_10.Name = "Click"
+ScreenGui.Click_10.Parent = ScreenGui.Effects_10
+ScreenGui.Click_10.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_10.BackgroundTransparency = 1.000
+ScreenGui.Click_10.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_10.ZIndex = 5
+ScreenGui.Click_10.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_10.Name = "Follow"
+ScreenGui.Follow_10.Parent = ScreenGui.Effects_10
+ScreenGui.Follow_10.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_10.BackgroundTransparency = 1.000
+ScreenGui.Follow_10.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_10.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_10.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_10.Visible = false
+ScreenGui.Follow_10.ZIndex = 5
+ScreenGui.Follow_10.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_14.Parent = ScreenGui.TextButton_16
+ScreenGui.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_14.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_14.Position = UDim2.new(0.0770493522, 0, -0.18197839, 0)
+ScreenGui.TextLabel_14.Size = UDim2.new(0, 123, 0, 27)
+ScreenGui.TextLabel_14.ZIndex = 3
+ScreenGui.TextLabel_14.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_14.Text = "Select Nature"
+ScreenGui.TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_14.TextScaled = true
+ScreenGui.TextLabel_14.TextSize = 14.000
+ScreenGui.TextLabel_14.TextWrapped = true
+
+ScreenGui.more_vert_10.Name = "more_vert"
+ScreenGui.more_vert_10.Parent = ScreenGui.TextButton_16
+ScreenGui.more_vert_10.BackgroundTransparency = 1.000
+ScreenGui.more_vert_10.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_10.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_10.ZIndex = 10
+ScreenGui.more_vert_10.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_10.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_10.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_46.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_46.Parent = ScreenGui.more_vert_10
+
+ScreenGui.touch_app_10.Name = "touch_app"
+ScreenGui.touch_app_10.Parent = ScreenGui.TextButton_16
+ScreenGui.touch_app_10.BackgroundTransparency = 1.000
+ScreenGui.touch_app_10.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_10.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_10.ZIndex = 10
+ScreenGui.touch_app_10.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_10.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_10.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_47.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_47.Parent = ScreenGui.touch_app_10
+
+ScreenGui.UIGradient_48.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_48.Parent = ScreenGui.TextButton_16
+
+ScreenGui.TextButton_17.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_17.BorderSizePixel = 0
+ScreenGui.TextButton_17.ClipsDescendants = true
+ScreenGui.TextButton_17.Position = UDim2.new(0.0161178522, 0, 0.362132698, 0)
+ScreenGui.TextButton_17.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_17.ZIndex = 3
+ScreenGui.TextButton_17.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_17.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_17.Text = ""
+ScreenGui.TextButton_17.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_17.TextScaled = true
+ScreenGui.TextButton_17.TextSize = 14.000
+ScreenGui.TextButton_17.TextWrapped = true
+ScreenGui.TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_11.Name = "Effects"
+ScreenGui.Effects_11.Parent = ScreenGui.TextButton_17
+
+ScreenGui.Click_11.Name = "Click"
+ScreenGui.Click_11.Parent = ScreenGui.Effects_11
+ScreenGui.Click_11.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_11.BackgroundTransparency = 1.000
+ScreenGui.Click_11.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_11.ZIndex = 5
+ScreenGui.Click_11.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_11.Name = "Follow"
+ScreenGui.Follow_11.Parent = ScreenGui.Effects_11
+ScreenGui.Follow_11.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_11.BackgroundTransparency = 1.000
+ScreenGui.Follow_11.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_11.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_11.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_11.Visible = false
+ScreenGui.Follow_11.ZIndex = 5
+ScreenGui.Follow_11.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_15.Parent = ScreenGui.TextButton_17
+ScreenGui.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_15.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_15.Position = UDim2.new(0.0770493522, 0, -0.159251124, 0)
+ScreenGui.TextLabel_15.Size = UDim2.new(0, 123, 0, 27)
+ScreenGui.TextLabel_15.ZIndex = 3
+ScreenGui.TextLabel_15.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_15.Text = "Select Pokeball"
+ScreenGui.TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_15.TextScaled = true
+ScreenGui.TextLabel_15.TextSize = 14.000
+ScreenGui.TextLabel_15.TextWrapped = true
+
+ScreenGui.more_vert_11.Name = "more_vert"
+ScreenGui.more_vert_11.Parent = ScreenGui.TextButton_17
+ScreenGui.more_vert_11.BackgroundTransparency = 1.000
+ScreenGui.more_vert_11.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_11.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_11.ZIndex = 10
+ScreenGui.more_vert_11.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_11.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_11.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_49.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_49.Parent = ScreenGui.more_vert_11
+
+ScreenGui.touch_app_11.Name = "touch_app"
+ScreenGui.touch_app_11.Parent = ScreenGui.TextButton_17
+ScreenGui.touch_app_11.BackgroundTransparency = 1.000
+ScreenGui.touch_app_11.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_11.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_11.ZIndex = 10
+ScreenGui.touch_app_11.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_11.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_11.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_50.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_50.Parent = ScreenGui.touch_app_11
+
+ScreenGui.UIGradient_51.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_51.Parent = ScreenGui.TextButton_17
+
+ScreenGui.TextButton_18.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_18.BorderSizePixel = 0
+ScreenGui.TextButton_18.ClipsDescendants = true
+ScreenGui.TextButton_18.Position = UDim2.new(0.0161178522, 0, 0.444529712, 0)
+ScreenGui.TextButton_18.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_18.ZIndex = 3
+ScreenGui.TextButton_18.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_18.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_18.Text = ""
+ScreenGui.TextButton_18.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_18.TextScaled = true
+ScreenGui.TextButton_18.TextSize = 14.000
+ScreenGui.TextButton_18.TextWrapped = true
+ScreenGui.TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_12.Name = "Effects"
+ScreenGui.Effects_12.Parent = ScreenGui.TextButton_18
+
+ScreenGui.Click_12.Name = "Click"
+ScreenGui.Click_12.Parent = ScreenGui.Effects_12
+ScreenGui.Click_12.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_12.BackgroundTransparency = 1.000
+ScreenGui.Click_12.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_12.ZIndex = 5
+ScreenGui.Click_12.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_12.Name = "Follow"
+ScreenGui.Follow_12.Parent = ScreenGui.Effects_12
+ScreenGui.Follow_12.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_12.BackgroundTransparency = 1.000
+ScreenGui.Follow_12.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_12.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_12.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_12.Visible = false
+ScreenGui.Follow_12.ZIndex = 5
+ScreenGui.Follow_12.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_16.Parent = ScreenGui.TextButton_18
+ScreenGui.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_16.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_16.Position = UDim2.new(0.0770493522, 0, -0.159251124, 0)
+ScreenGui.TextLabel_16.Size = UDim2.new(0, 123, 0, 27)
+ScreenGui.TextLabel_16.ZIndex = 3
+ScreenGui.TextLabel_16.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_16.Text = "Select Shiny"
+ScreenGui.TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_16.TextScaled = true
+ScreenGui.TextLabel_16.TextSize = 14.000
+ScreenGui.TextLabel_16.TextWrapped = true
+
+ScreenGui.more_vert_12.Name = "more_vert"
+ScreenGui.more_vert_12.Parent = ScreenGui.TextButton_18
+ScreenGui.more_vert_12.BackgroundTransparency = 1.000
+ScreenGui.more_vert_12.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_12.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_12.ZIndex = 10
+ScreenGui.more_vert_12.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_12.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_12.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_52.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_52.Parent = ScreenGui.more_vert_12
+
+ScreenGui.touch_app_12.Name = "touch_app"
+ScreenGui.touch_app_12.Parent = ScreenGui.TextButton_18
+ScreenGui.touch_app_12.BackgroundTransparency = 1.000
+ScreenGui.touch_app_12.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_12.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_12.ZIndex = 10
+ScreenGui.touch_app_12.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_12.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_12.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_53.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_53.Parent = ScreenGui.touch_app_12
+
+ScreenGui.UIGradient_54.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_54.Parent = ScreenGui.TextButton_18
+
+ScreenGui.TextButton_19.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_19.BorderSizePixel = 0
+ScreenGui.TextButton_19.ClipsDescendants = true
+ScreenGui.TextButton_19.Position = UDim2.new(0.0161178522, 0, 0.526926696, 0)
+ScreenGui.TextButton_19.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_19.ZIndex = 3
+ScreenGui.TextButton_19.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_19.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_19.Text = ""
+ScreenGui.TextButton_19.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_19.TextScaled = true
+ScreenGui.TextButton_19.TextSize = 14.000
+ScreenGui.TextButton_19.TextWrapped = true
+ScreenGui.TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_13.Name = "Effects"
+ScreenGui.Effects_13.Parent = ScreenGui.TextButton_19
+
+ScreenGui.Click_13.Name = "Click"
+ScreenGui.Click_13.Parent = ScreenGui.Effects_13
+ScreenGui.Click_13.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_13.BackgroundTransparency = 1.000
+ScreenGui.Click_13.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_13.ZIndex = 5
+ScreenGui.Click_13.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_13.Name = "Follow"
+ScreenGui.Follow_13.Parent = ScreenGui.Effects_13
+ScreenGui.Follow_13.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_13.BackgroundTransparency = 1.000
+ScreenGui.Follow_13.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_13.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_13.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_13.Visible = false
+ScreenGui.Follow_13.ZIndex = 5
+ScreenGui.Follow_13.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_17.Parent = ScreenGui.TextButton_19
+ScreenGui.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_17.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_17.Position = UDim2.new(0.0612265654, 0, -0.181978405, 0)
+ScreenGui.TextLabel_17.Size = UDim2.new(0, 123, 0, 27)
+ScreenGui.TextLabel_17.ZIndex = 3
+ScreenGui.TextLabel_17.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_17.Text = "Select Aura"
+ScreenGui.TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_17.TextScaled = true
+ScreenGui.TextLabel_17.TextSize = 14.000
+ScreenGui.TextLabel_17.TextWrapped = true
+
+ScreenGui.more_vert_13.Name = "more_vert"
+ScreenGui.more_vert_13.Parent = ScreenGui.TextButton_19
+ScreenGui.more_vert_13.BackgroundTransparency = 1.000
+ScreenGui.more_vert_13.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_13.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_13.ZIndex = 10
+ScreenGui.more_vert_13.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_13.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_13.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_55.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_55.Parent = ScreenGui.more_vert_13
+
+ScreenGui.touch_app_13.Name = "touch_app"
+ScreenGui.touch_app_13.Parent = ScreenGui.TextButton_19
+ScreenGui.touch_app_13.BackgroundTransparency = 1.000
+ScreenGui.touch_app_13.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_13.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_13.ZIndex = 10
+ScreenGui.touch_app_13.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_13.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_13.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_56.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_56.Parent = ScreenGui.touch_app_13
+
+ScreenGui.UIGradient_57.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_57.Parent = ScreenGui.TextButton_19
+
+ScreenGui.TextButton_20.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_20.BorderSizePixel = 0
+ScreenGui.TextButton_20.ClipsDescendants = true
+ScreenGui.TextButton_20.Position = UDim2.new(0.0161178522, 0, 0.60932368, 0)
+ScreenGui.TextButton_20.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_20.ZIndex = 3
+ScreenGui.TextButton_20.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_20.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_20.Text = ""
+ScreenGui.TextButton_20.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_20.TextScaled = true
+ScreenGui.TextButton_20.TextSize = 14.000
+ScreenGui.TextButton_20.TextWrapped = true
+ScreenGui.TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_14.Name = "Effects"
+ScreenGui.Effects_14.Parent = ScreenGui.TextButton_20
+
+ScreenGui.Click_14.Name = "Click"
+ScreenGui.Click_14.Parent = ScreenGui.Effects_14
+ScreenGui.Click_14.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_14.BackgroundTransparency = 1.000
+ScreenGui.Click_14.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_14.ZIndex = 5
+ScreenGui.Click_14.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_14.Name = "Follow"
+ScreenGui.Follow_14.Parent = ScreenGui.Effects_14
+ScreenGui.Follow_14.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_14.BackgroundTransparency = 1.000
+ScreenGui.Follow_14.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_14.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_14.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_14.Visible = false
+ScreenGui.Follow_14.ZIndex = 5
+ScreenGui.Follow_14.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_18.Parent = ScreenGui.TextButton_20
+ScreenGui.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_18.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_18.Position = UDim2.new(0.030508697, 0, -0.155094489, 0)
+ScreenGui.TextLabel_18.Size = UDim2.new(0, 128, 0, 27)
+ScreenGui.TextLabel_18.ZIndex = 3
+ScreenGui.TextLabel_18.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_18.Text = "Select OT"
+ScreenGui.TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_18.TextScaled = true
+ScreenGui.TextLabel_18.TextSize = 14.000
+ScreenGui.TextLabel_18.TextWrapped = true
+
+ScreenGui.more_vert_14.Name = "more_vert"
+ScreenGui.more_vert_14.Parent = ScreenGui.TextButton_20
+ScreenGui.more_vert_14.BackgroundTransparency = 1.000
+ScreenGui.more_vert_14.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_14.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_14.ZIndex = 10
+ScreenGui.more_vert_14.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_14.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_14.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_58.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_58.Parent = ScreenGui.more_vert_14
+
+ScreenGui.touch_app_14.Name = "touch_app"
+ScreenGui.touch_app_14.Parent = ScreenGui.TextButton_20
+ScreenGui.touch_app_14.BackgroundTransparency = 1.000
+ScreenGui.touch_app_14.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_14.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_14.ZIndex = 10
+ScreenGui.touch_app_14.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_14.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_14.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_59.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_59.Parent = ScreenGui.touch_app_14
+
+ScreenGui.UIGradient_60.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_60.Parent = ScreenGui.TextButton_20
+
+ScreenGui.TextButton_21.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_21.BorderSizePixel = 0
+ScreenGui.TextButton_21.ClipsDescendants = true
+ScreenGui.TextButton_21.Position = UDim2.new(0.0161178559, 0, 0.774117708, 0)
+ScreenGui.TextButton_21.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_21.Visible = false
+ScreenGui.TextButton_21.ZIndex = 3
+ScreenGui.TextButton_21.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_21.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_21.Text = ""
+ScreenGui.TextButton_21.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_21.TextScaled = true
+ScreenGui.TextButton_21.TextSize = 14.000
+ScreenGui.TextButton_21.TextWrapped = true
+ScreenGui.TextButton_21.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_15.Name = "Effects"
+ScreenGui.Effects_15.Parent = ScreenGui.TextButton_21
+
+ScreenGui.Click_15.Name = "Click"
+ScreenGui.Click_15.Parent = ScreenGui.Effects_15
+ScreenGui.Click_15.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_15.BackgroundTransparency = 1.000
+ScreenGui.Click_15.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_15.ZIndex = 5
+ScreenGui.Click_15.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_15.Name = "Follow"
+ScreenGui.Follow_15.Parent = ScreenGui.Effects_15
+ScreenGui.Follow_15.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_15.BackgroundTransparency = 1.000
+ScreenGui.Follow_15.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_15.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_15.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_15.Visible = false
+ScreenGui.Follow_15.ZIndex = 5
+ScreenGui.Follow_15.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_19.Parent = ScreenGui.TextButton_21
+ScreenGui.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_19.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_19.Position = UDim2.new(0.081141606, 0, -0.155094489, 0)
+ScreenGui.TextLabel_19.Size = UDim2.new(0, 128, 0, 27)
+ScreenGui.TextLabel_19.ZIndex = 3
+ScreenGui.TextLabel_19.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_19.Text = "Select Player"
+ScreenGui.TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_19.TextScaled = true
+ScreenGui.TextLabel_19.TextSize = 14.000
+ScreenGui.TextLabel_19.TextWrapped = true
+
+ScreenGui.more_vert_15.Name = "more_vert"
+ScreenGui.more_vert_15.Parent = ScreenGui.TextButton_21
+ScreenGui.more_vert_15.BackgroundTransparency = 1.000
+ScreenGui.more_vert_15.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_15.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_15.ZIndex = 10
+ScreenGui.more_vert_15.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_15.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_15.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_61.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_61.Parent = ScreenGui.more_vert_15
+
+ScreenGui.touch_app_15.Name = "touch_app"
+ScreenGui.touch_app_15.Parent = ScreenGui.TextButton_21
+ScreenGui.touch_app_15.BackgroundTransparency = 1.000
+ScreenGui.touch_app_15.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_15.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_15.ZIndex = 10
+ScreenGui.touch_app_15.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_15.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_15.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_62.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_62.Parent = ScreenGui.touch_app_15
+
+ScreenGui.UIGradient_63.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_63.Parent = ScreenGui.TextButton_21
+
+ScreenGui.TextButton_22.Parent = ScreenGui.Spawner
+ScreenGui.TextButton_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_22.BorderSizePixel = 0
+ScreenGui.TextButton_22.ClipsDescendants = true
+ScreenGui.TextButton_22.Position = UDim2.new(0.0161178522, 0, 0.691720665, 0)
+ScreenGui.TextButton_22.Size = UDim2.new(0, 316, 0, 44)
+ScreenGui.TextButton_22.ZIndex = 3
+ScreenGui.TextButton_22.Style = Enum.ButtonStyle.RobloxRoundButton
+ScreenGui.TextButton_22.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_22.Text = ""
+ScreenGui.TextButton_22.TextColor3 = Color3.fromRGB(231, 231, 231)
+ScreenGui.TextButton_22.TextScaled = true
+ScreenGui.TextButton_22.TextSize = 14.000
+ScreenGui.TextButton_22.TextWrapped = true
+ScreenGui.TextButton_22.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Effects_16.Name = "Effects"
+ScreenGui.Effects_16.Parent = ScreenGui.TextButton_22
+
+ScreenGui.Click_16.Name = "Click"
+ScreenGui.Click_16.Parent = ScreenGui.Effects_16
+ScreenGui.Click_16.AnchorPoint = Vector2.new(0.600000024, 0.600000024)
+ScreenGui.Click_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Click_16.BackgroundTransparency = 1.000
+ScreenGui.Click_16.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Click_16.ZIndex = 5
+ScreenGui.Click_16.Image = "rbxassetid://967145807"
+
+ScreenGui.Follow_16.Name = "Follow"
+ScreenGui.Follow_16.Parent = ScreenGui.Effects_16
+ScreenGui.Follow_16.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
+ScreenGui.Follow_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Follow_16.BackgroundTransparency = 1.000
+ScreenGui.Follow_16.Position = UDim2.new(0, 329, 0, 83)
+ScreenGui.Follow_16.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+ScreenGui.Follow_16.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ScreenGui.Follow_16.Visible = false
+ScreenGui.Follow_16.ZIndex = 5
+ScreenGui.Follow_16.Image = "rbxassetid://2267692278"
+
+ScreenGui.TextLabel_20.Parent = ScreenGui.TextButton_22
+ScreenGui.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_20.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_20.Position = UDim2.new(0.0621542633, 0, -0.155094489, 0)
+ScreenGui.TextLabel_20.Size = UDim2.new(0, 128, 0, 27)
+ScreenGui.TextLabel_20.ZIndex = 3
+ScreenGui.TextLabel_20.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_20.Text = "Select Item"
+ScreenGui.TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_20.TextScaled = true
+ScreenGui.TextLabel_20.TextSize = 14.000
+ScreenGui.TextLabel_20.TextWrapped = true
+
+ScreenGui.more_vert_16.Name = "more_vert"
+ScreenGui.more_vert_16.Parent = ScreenGui.TextButton_22
+ScreenGui.more_vert_16.BackgroundTransparency = 1.000
+ScreenGui.more_vert_16.Position = UDim2.new(0.925531924, 0, -0.0909090936, 0)
+ScreenGui.more_vert_16.Size = UDim2.new(0, 25, 0, 25)
+ScreenGui.more_vert_16.ZIndex = 10
+ScreenGui.more_vert_16.Image = "rbxassetid://3926305904"
+ScreenGui.more_vert_16.ImageRectOffset = Vector2.new(764, 764)
+ScreenGui.more_vert_16.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_64.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_64.Parent = ScreenGui.more_vert_16
+
+ScreenGui.touch_app_16.Name = "touch_app"
+ScreenGui.touch_app_16.Parent = ScreenGui.TextButton_22
+ScreenGui.touch_app_16.BackgroundTransparency = 1.000
+ScreenGui.touch_app_16.Position = UDim2.new(-0.0166302621, 0, -0.336419404, 0)
+ScreenGui.touch_app_16.Size = UDim2.new(0, 29, 0, 31)
+ScreenGui.touch_app_16.ZIndex = 10
+ScreenGui.touch_app_16.Image = "rbxassetid://3926305904"
+ScreenGui.touch_app_16.ImageRectOffset = Vector2.new(84, 204)
+ScreenGui.touch_app_16.ImageRectSize = Vector2.new(36, 36)
+
+ScreenGui.UIGradient_65.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_65.Parent = ScreenGui.touch_app_16
+
+ScreenGui.UIGradient_66.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 104, 252)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(51, 68, 175))}
+ScreenGui.UIGradient_66.Parent = ScreenGui.TextButton_22
+
+ScreenGui.Pokemon.Name = "Pokemon"
+ScreenGui.Pokemon.Parent = ScreenGui.Stuff
+ScreenGui.Pokemon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Pokemon.BackgroundTransparency = 1.000
+ScreenGui.Pokemon.BorderSizePixel = 0
+ScreenGui.Pokemon.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Pokemon.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Pokemon.Visible = false
+ScreenGui.Pokemon.ZIndex = 9
+ScreenGui.Pokemon.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Pokemon.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Pokemon.PlaceholderText = "Pokemon"
+ScreenGui.Pokemon.Text = ""
+ScreenGui.Pokemon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Pokemon.TextScaled = true
+ScreenGui.Pokemon.TextSize = 14.000
+ScreenGui.Pokemon.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_6.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_6.Parent = ScreenGui.Pokemon
+ScreenGui.TextBox_Roundify_2px_6.Active = true
+ScreenGui.TextBox_Roundify_2px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_6.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_6.Selectable = true
+ScreenGui.TextBox_Roundify_2px_6.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_6.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_6.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_6.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_6.SliceScale = 0.167
+
+ScreenGui.UIGradient_67.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_67.Parent = ScreenGui.TextBox_Roundify_2px_6
+
+ScreenGui.Level.Name = "Level"
+ScreenGui.Level.Parent = ScreenGui.Stuff
+ScreenGui.Level.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Level.BackgroundTransparency = 1.000
+ScreenGui.Level.BorderSizePixel = 0
+ScreenGui.Level.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Level.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Level.Visible = false
+ScreenGui.Level.ZIndex = 9
+ScreenGui.Level.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Level.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Level.PlaceholderText = "Level"
+ScreenGui.Level.Text = ""
+ScreenGui.Level.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Level.TextScaled = true
+ScreenGui.Level.TextSize = 14.000
+ScreenGui.Level.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_7.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_7.Parent = ScreenGui.Level
+ScreenGui.TextBox_Roundify_2px_7.Active = true
+ScreenGui.TextBox_Roundify_2px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_7.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_7.Selectable = true
+ScreenGui.TextBox_Roundify_2px_7.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_7.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_7.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_7.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_7.SliceScale = 0.167
+
+ScreenGui.UIGradient_68.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_68.Parent = ScreenGui.TextBox_Roundify_2px_7
+
+ScreenGui.Nature.Name = "Nature"
+ScreenGui.Nature.Parent = ScreenGui.Stuff
+ScreenGui.Nature.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Nature.BackgroundTransparency = 1.000
+ScreenGui.Nature.BorderSizePixel = 0
+ScreenGui.Nature.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Nature.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Nature.Visible = false
+ScreenGui.Nature.ZIndex = 9
+ScreenGui.Nature.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Nature.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Nature.PlaceholderText = "Nature"
+ScreenGui.Nature.Text = ""
+ScreenGui.Nature.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Nature.TextScaled = true
+ScreenGui.Nature.TextSize = 14.000
+ScreenGui.Nature.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_8.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_8.Parent = ScreenGui.Nature
+ScreenGui.TextBox_Roundify_2px_8.Active = true
+ScreenGui.TextBox_Roundify_2px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_8.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_8.Selectable = true
+ScreenGui.TextBox_Roundify_2px_8.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_8.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_8.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_8.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_8.SliceScale = 0.167
+
+ScreenGui.UIGradient_69.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_69.Parent = ScreenGui.TextBox_Roundify_2px_8
+
+ScreenGui.Pokeball.Name = "Pokeball"
+ScreenGui.Pokeball.Parent = ScreenGui.Stuff
+ScreenGui.Pokeball.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Pokeball.BackgroundTransparency = 1.000
+ScreenGui.Pokeball.BorderSizePixel = 0
+ScreenGui.Pokeball.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Pokeball.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Pokeball.Visible = false
+ScreenGui.Pokeball.ZIndex = 9
+ScreenGui.Pokeball.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Pokeball.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Pokeball.PlaceholderText = "Pokeball"
+ScreenGui.Pokeball.Text = ""
+ScreenGui.Pokeball.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Pokeball.TextScaled = true
+ScreenGui.Pokeball.TextSize = 14.000
+ScreenGui.Pokeball.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_9.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_9.Parent = ScreenGui.Pokeball
+ScreenGui.TextBox_Roundify_2px_9.Active = true
+ScreenGui.TextBox_Roundify_2px_9.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_9.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_9.Selectable = true
+ScreenGui.TextBox_Roundify_2px_9.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_9.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_9.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_9.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_9.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_9.SliceScale = 0.167
+
+ScreenGui.UIGradient_70.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_70.Parent = ScreenGui.TextBox_Roundify_2px_9
+
+ScreenGui.Shiny.Name = "Shiny"
+ScreenGui.Shiny.Parent = ScreenGui.Stuff
+ScreenGui.Shiny.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Shiny.BackgroundTransparency = 1.000
+ScreenGui.Shiny.BorderSizePixel = 0
+ScreenGui.Shiny.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Shiny.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Shiny.Visible = false
+ScreenGui.Shiny.ZIndex = 9
+ScreenGui.Shiny.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Shiny.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Shiny.PlaceholderText = "Shiny (Type Anything Here)"
+ScreenGui.Shiny.Text = ""
+ScreenGui.Shiny.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Shiny.TextScaled = true
+ScreenGui.Shiny.TextSize = 14.000
+ScreenGui.Shiny.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_10.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_10.Parent = ScreenGui.Shiny
+ScreenGui.TextBox_Roundify_2px_10.Active = true
+ScreenGui.TextBox_Roundify_2px_10.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_10.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_10.Selectable = true
+ScreenGui.TextBox_Roundify_2px_10.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_10.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_10.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_10.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_10.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_10.SliceScale = 0.167
+
+ScreenGui.UIGradient_71.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_71.Parent = ScreenGui.TextBox_Roundify_2px_10
+
+ScreenGui.Aura.Name = "Aura"
+ScreenGui.Aura.Parent = ScreenGui.Stuff
+ScreenGui.Aura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Aura.BackgroundTransparency = 1.000
+ScreenGui.Aura.BorderSizePixel = 0
+ScreenGui.Aura.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Aura.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Aura.Visible = false
+ScreenGui.Aura.ZIndex = 9
+ScreenGui.Aura.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Aura.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Aura.PlaceholderText = "Aura (Type Red For Example)"
+ScreenGui.Aura.Text = ""
+ScreenGui.Aura.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Aura.TextScaled = true
+ScreenGui.Aura.TextSize = 14.000
+ScreenGui.Aura.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_11.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_11.Parent = ScreenGui.Aura
+ScreenGui.TextBox_Roundify_2px_11.Active = true
+ScreenGui.TextBox_Roundify_2px_11.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_11.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_11.Selectable = true
+ScreenGui.TextBox_Roundify_2px_11.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_11.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_11.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_11.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_11.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_11.SliceScale = 0.167
+
+ScreenGui.UIGradient_72.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_72.Parent = ScreenGui.TextBox_Roundify_2px_11
+
+ScreenGui.Player.Name = "Player"
+ScreenGui.Player.Parent = ScreenGui.Stuff
+ScreenGui.Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Player.BackgroundTransparency = 1.000
+ScreenGui.Player.BorderSizePixel = 0
+ScreenGui.Player.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Player.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Player.Visible = false
+ScreenGui.Player.ZIndex = 9
+ScreenGui.Player.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Player.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Player.PlaceholderText = "Player"
+ScreenGui.Player.Text = ""
+ScreenGui.Player.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Player.TextScaled = true
+ScreenGui.Player.TextSize = 14.000
+ScreenGui.Player.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_12.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_12.Parent = ScreenGui.Player
+ScreenGui.TextBox_Roundify_2px_12.Active = true
+ScreenGui.TextBox_Roundify_2px_12.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_12.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_12.Selectable = true
+ScreenGui.TextBox_Roundify_2px_12.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_12.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_12.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_12.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_12.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_12.SliceScale = 0.167
+
+ScreenGui.UIGradient_73.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_73.Parent = ScreenGui.TextBox_Roundify_2px_12
+
+ScreenGui.SpawnInfo.Name = "SpawnInfo"
+ScreenGui.SpawnInfo.Parent = ScreenGui.Stuff
+ScreenGui.SpawnInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SpawnInfo.BackgroundTransparency = 1.000
+ScreenGui.SpawnInfo.BorderSizePixel = 0
+ScreenGui.SpawnInfo.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.SpawnInfo.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.SpawnInfo.Visible = false
+ScreenGui.SpawnInfo.ZIndex = 9
+ScreenGui.SpawnInfo.Font = Enum.Font.SourceSansSemibold
+ScreenGui.SpawnInfo.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SpawnInfo.PlaceholderText = "Pokemon Spawner"
+ScreenGui.SpawnInfo.Text = ""
+ScreenGui.SpawnInfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.SpawnInfo.TextScaled = true
+ScreenGui.SpawnInfo.TextSize = 14.000
+ScreenGui.SpawnInfo.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_13.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_13.Parent = ScreenGui.SpawnInfo
+ScreenGui.TextBox_Roundify_2px_13.Active = true
+ScreenGui.TextBox_Roundify_2px_13.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_13.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_13.Selectable = true
+ScreenGui.TextBox_Roundify_2px_13.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_13.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_13.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_13.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_13.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_13.SliceScale = 0.167
+
+ScreenGui.UIGradient_74.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_74.Parent = ScreenGui.TextBox_Roundify_2px_13
+
+ScreenGui.PokeItem.Name = "PokeItem"
+ScreenGui.PokeItem.Parent = ScreenGui.Stuff
+ScreenGui.PokeItem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.PokeItem.BackgroundTransparency = 1.000
+ScreenGui.PokeItem.BorderSizePixel = 0
+ScreenGui.PokeItem.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.PokeItem.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.PokeItem.Visible = false
+ScreenGui.PokeItem.ZIndex = 9
+ScreenGui.PokeItem.Font = Enum.Font.SourceSansSemibold
+ScreenGui.PokeItem.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.PokeItem.PlaceholderText = "Item"
+ScreenGui.PokeItem.Text = ""
+ScreenGui.PokeItem.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.PokeItem.TextScaled = true
+ScreenGui.PokeItem.TextSize = 14.000
+ScreenGui.PokeItem.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_14.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_14.Parent = ScreenGui.PokeItem
+ScreenGui.TextBox_Roundify_2px_14.Active = true
+ScreenGui.TextBox_Roundify_2px_14.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_14.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_14.Selectable = true
+ScreenGui.TextBox_Roundify_2px_14.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_14.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_14.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_14.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_14.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_14.SliceScale = 0.167
+
+ScreenGui.UIGradient_75.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_75.Parent = ScreenGui.TextBox_Roundify_2px_14
+
+ScreenGui.Item.Name = "Item"
+ScreenGui.Item.Parent = ScreenGui.Stuff
+ScreenGui.Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Item.BackgroundTransparency = 1.000
+ScreenGui.Item.BorderSizePixel = 0
+ScreenGui.Item.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.Item.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.Item.Visible = false
+ScreenGui.Item.ZIndex = 9
+ScreenGui.Item.Font = Enum.Font.SourceSansSemibold
+ScreenGui.Item.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Item.PlaceholderText = "Item"
+ScreenGui.Item.Text = ""
+ScreenGui.Item.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Item.TextScaled = true
+ScreenGui.Item.TextSize = 14.000
+ScreenGui.Item.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_15.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_15.Parent = ScreenGui.Item
+ScreenGui.TextBox_Roundify_2px_15.Active = true
+ScreenGui.TextBox_Roundify_2px_15.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_15.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_15.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_15.Selectable = true
+ScreenGui.TextBox_Roundify_2px_15.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_15.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_15.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_15.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_15.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_15.SliceScale = 0.167
+
+ScreenGui.UIGradient_76.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_76.Parent = ScreenGui.TextBox_Roundify_2px_15
+
+ScreenGui.OT.Name = "OT"
+ScreenGui.OT.Parent = ScreenGui.Stuff
+ScreenGui.OT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OT.BackgroundTransparency = 1.000
+ScreenGui.OT.BorderSizePixel = 0
+ScreenGui.OT.Position = UDim2.new(0.224242434, 0, 0.868913829, 0)
+ScreenGui.OT.Size = UDim2.new(0, 200, 0, 35)
+ScreenGui.OT.Visible = false
+ScreenGui.OT.ZIndex = 9
+ScreenGui.OT.Font = Enum.Font.SourceSansSemibold
+ScreenGui.OT.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OT.PlaceholderText = "OT"
+ScreenGui.OT.Text = ""
+ScreenGui.OT.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.OT.TextScaled = true
+ScreenGui.OT.TextSize = 14.000
+ScreenGui.OT.TextWrapped = true
+
+ScreenGui.TextBox_Roundify_2px_16.Name = "TextBox_Roundify_2px"
+ScreenGui.TextBox_Roundify_2px_16.Parent = ScreenGui.OT
+ScreenGui.TextBox_Roundify_2px_16.Active = true
+ScreenGui.TextBox_Roundify_2px_16.AnchorPoint = Vector2.new(0.5, 0.5)
+ScreenGui.TextBox_Roundify_2px_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextBox_Roundify_2px_16.BackgroundTransparency = 1.000
+ScreenGui.TextBox_Roundify_2px_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScreenGui.TextBox_Roundify_2px_16.Selectable = true
+ScreenGui.TextBox_Roundify_2px_16.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.TextBox_Roundify_2px_16.ZIndex = 8
+ScreenGui.TextBox_Roundify_2px_16.Image = "rbxassetid://3570695787"
+ScreenGui.TextBox_Roundify_2px_16.ScaleType = Enum.ScaleType.Slice
+ScreenGui.TextBox_Roundify_2px_16.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.TextBox_Roundify_2px_16.SliceScale = 0.167
+
+ScreenGui.UIGradient_77.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 13, 80)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27, 17, 231))}
+ScreenGui.UIGradient_77.Parent = ScreenGui.TextBox_Roundify_2px_16
+
+ScreenGui.TextLabel_21.Parent = ScreenGui.Frame
+ScreenGui.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_21.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_21.Position = UDim2.new(0.0160965789, 0, 0.921823978, 0)
+ScreenGui.TextLabel_21.Size = UDim2.new(0, 74, 0, 16)
+ScreenGui.TextLabel_21.Font = Enum.Font.SourceSansSemibold
+ScreenGui.TextLabel_21.Text = "DL#0445"
+ScreenGui.TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_21.TextSize = 14.000
+
+-- Scripts:
+
+local function ZWXN_fake_script() -- ScreenGui.Frame.DraggableGUI 
+	local script = Instance.new('LocalScript', ScreenGui.Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if gui.Visible then
+				update(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZWXN_fake_script)()
+local function RCLMZ_fake_script() -- ScreenGui.Effects.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+		if script.Parent.Parent.Parent.Parent.Amount.Text ~= "" then
+			local args = {
+				[1] = {
+					["Experience"] = 
+						game.Players.LocalPlayer:WaitForChild("Money")},
+				[2] = script.Parent.Parent.Parent.Parent.Amount.Text
+			}
+	print("Working?")
+			game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+			print("Working?2")
+	end
+	if script.Parent.Parent.Parent.Parent.Amount.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Amount.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Amount.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Amount.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Amount.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(RCLMZ_fake_script)()
+local function NTPGOTX_fake_script() -- ScreenGui.Effects_2.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_2)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local Zone = script.Parent.Click
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.BadgesInfo.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.BadgesInfo.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(NTPGOTX_fake_script)()
+local function CGNAKXP_fake_script() -- ScreenGui.Effects_3.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_3)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local Zone = script.Parent.Click
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			script.Parent.Parent.TextLabel.Text = "SFX: OFF"
+	script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = true else
+			script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = false
+			script.Parent.Parent.TextLabel.Text = "SFX: ON"
+	end
+		if script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+	Sound:Play()
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Parent.SFXOFF.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Parent.SFXOFF.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(CGNAKXP_fake_script)()
+local function RBOK_fake_script() -- ScreenGui.Effects_4.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_4)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local Zone = script.Parent.Click
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			script.Parent.Parent.TextLabel.Text = "SFX: OFF"
+	script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = true else
+			script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = false
+			script.Parent.Parent.TextLabel.Text = "SFX: ON"
+	end
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+	Sound:Play()
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.HealParty.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.HealParty.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(RBOK_fake_script)()
+local function WCGVBG_fake_script() -- ScreenGui.Effects_5.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_5)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local Zone = script.Parent.Click
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			script.Parent.Parent.TextLabel.Text = "SFX: OFF"
+	script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = true else
+			script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value = false
+			script.Parent.Parent.TextLabel.Text = "SFX: ON"
+	end
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+	Sound:Play()
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.MaxPokedex.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.MaxPokedex.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(WCGVBG_fake_script)()
+local function NPIA_fake_script() -- ScreenGui.Effects_6.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_6)
+
+	local spawning = false
+	Rep = game:GetService("ReplicatedStorage")
+	function ChangeParent(Object, Par)
+		Rep.REvents.PC.ParentChange:InvokeServer(Object, Par)
+	end
+	Tab = getrenv()._G
+	FakeFunctions = {["UpgradedRoulette"] = true, ["BattleInitiate"] = true, ["ForceOak"] = true, ["GetBattleTowerTeam"] = true, ["PCSystem"] = true, ["UltimateRoulette"] = true, ["MoveRelearner"] = true, ["EVChecker"] = true, ["nickname"] = true, ["TrainerCard"] = true, ["PokeBoosters"] = true, ["BattleTowerSelectPoke"] = true, ["ItemBattle"] = true, ["UpdateBag"] = true, ["StatScreen"] = true, ["getBackSprite"] = true, ["Roulette"] = true, ["Shop"] = true, ["CashShop"] = true, ["TMShop"] = true, ["MysteryGift"] = true, ["Redward"] = true, ["TransferAura"] = true, ["UsernamePartyGet"] = true, ["Trade"] = true, ["BPTMShop"] = true, ["PokemonShop"] = true, ["Nickname"] = true, ["NatureScientist"] = true, ["BPItemShop"] = true, ["PartyBattle"] = true, ["getFrontSprite"] = true, ["Pokedex"] = true, ["PVPParty"] = true, ["PartyOverworld"] = true, ["ShowStats"] = true}
+	function GetRealFunction()
+		for i, v in pairs(Tab) do
+			if typeof(v) == "function" and FakeFunctions[tostring(i)] == nil then
+				return v
+			end
+		end
+	end
+	function GetPokemon(Poke)
+		local Pokes = Tab.Pokemon
+		if Pokes[Poke] ~= nil then
+			return Poke
+		end
+		for i, v in pairs(Pokes) do
+			if string.sub(string.lower(i), 1, string.len(Poke)) == string.lower(Poke) then
+				return i
+			end
+		end
+	end
+	SpawnFunction = GetRealFunction()
+	if debug.getconstant(SpawnFunction, 3) == "getrenv" then
+		debug.setconstant(SpawnFunction, 3, "This is a really long string which should bypass anything because I said so.")
+	end
+	
+	function ChangeOT(Pokemon, ot)
+		local args = {
+			[1] = {
+				["Experience"] = 
+					Pokemon:WaitForChild("Owner")},
+			[2] = ot
+		}
+		game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+	end
+	function ChangeNature(Pokemon, Nature)
+		local args = {
+			[1] = {
+				["Experience"] = 
+					Pokemon:WaitForChild("Nature")},
+			[2] = Nature
+		}
+		game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+	end
+	function ChangeAura(Pokemon, color)
+		local args = {
+			[1] = {
+				["Experience"] = 
+					Pokemon:WaitForChild("Aura").ColorChange},
+			[2] = color
+		}
+		game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+	end
+	function ChangeItem(Pokemon, item)
+		local args = {
+			[1] = {
+				["Experience"] = 
+					Pokemon:WaitForChild("HeldItem")},
+			[2] = item
+		}
+		game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+	end
+	function Shiny(Pokemon)
+		local args = {
+			[1] = {
+				["Experience"] = 
+					Pokemon:WaitForChild("Shiny")},
+			[2] = "True"
+		}
+		game:GetService("ReplicatedStorage").REvents.Internal.fiaj:InvokeServer(unpack(args))
+	end
+	
+	
+	
+	SpawnerFunction = {
+	SpawnPokemon = function(Poke, Lvl, Par, S, A)
+	print("Test")
+		local SpawnPlace = game.Players[game.Players.LocalPlayer.Name].PokemonParty
+		Poke = SpawnFunction(Poke, SpawnPlace, Lvl)
+		if tostring(Par) == "PokemonParty" then
+			if (A == true and not Poke:FindFirstChild("Aura")) then
+				ChangeParent(Poke, nil)
+				return
+			end
+			Rep.REvents.PC.ChangePos:InvokeServer(Poke, #Par:GetChildren()+1)
+			ChangeParent(Poke, Par)
+	        if S == true then
+	Shiny(Poke)
+	end
+	if script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.PokeItem.Text ~= "" then
+					ChangeItem(Poke, script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.PokeItem.Text)
+	end
+				if script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.OT.Text ~= "" then
+					ChangeOT(Poke,script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.OT.Text)
+	end
+				if script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Nature.Text ~= "" then
+					ChangeNature(Poke, script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Stuff.Nature.Text)
+	end
+	script.Parent.Parent.TextLabel.Text = "Get Pokemon"
+	spawning = false
+		end
+	end
+	}
+	
+	
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+	function CheckShiny()
+			if script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Shiny.Text ~= "" then
+	return true else return false
+	end
+	end
+	function CheckAura()
+			if script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Aura.Text ~= "" then
+	return true else return false
+	end
+	end
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	wait(0.1)
+	    if spawning == false then
+	spawning = true
+			script.Parent.Parent.TextLabel.Text = "Spawning Pokemon"
+			while CheckAura() == true and spawning == true and wait(0.01) do
+				SpawnerFunction.SpawnPokemon(GetPokemon(script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Pokemon.Text),script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Level.Text, game.Players.LocalPlayer.PokemonParty, CheckShiny(), CheckAura())
+			end
+			SpawnerFunction.SpawnPokemon(GetPokemon(script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Pokemon.Text),script.Parent.Parent.Parent.Parent.Parent.Parent.Frame.Stuff.Level.Text, game.Players.LocalPlayer.PokemonParty, CheckShiny(), CheckAura())
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)  
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.Spawner.Visible = not script.Parent.Parent.Parent.Parent.Spawner.Visible
+		script.Parent.Parent.Parent.Visible = not script.Parent.Parent.Parent.Visible
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(NPIA_fake_script)()
+local function SOGUW_fake_script() -- ScreenGui.Effects_7.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_7)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Item.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Item.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Item.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Item.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Item.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(SOGUW_fake_script)()
+local function PWHS_fake_script() -- ScreenGui.Effects_8.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_8)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Pokemon.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Pokemon.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Pokemon.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Pokemon.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Pokemon.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(PWHS_fake_script)()
+local function AKVRDR_fake_script() -- ScreenGui.Effects_9.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_9)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Level.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Level.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Level.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Level.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Level.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(AKVRDR_fake_script)()
+local function XFNOXZA_fake_script() -- ScreenGui.Effects_10.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_10)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Nature.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Nature.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Nature.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Nature.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Nature.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(XFNOXZA_fake_script)()
+local function HLMUFHZ_fake_script() -- ScreenGui.Effects_11.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_11)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Pokeball.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Pokeball.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Pokeball.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Pokeball.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Pokeball.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(HLMUFHZ_fake_script)()
+local function HIELMLY_fake_script() -- ScreenGui.Effects_12.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_12)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Shiny.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Shiny.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Shiny.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Shiny.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Shiny.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(HIELMLY_fake_script)()
+local function FBTE_fake_script() -- ScreenGui.Effects_13.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_13)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Aura.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Aura.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Aura.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Aura.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Aura.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(FBTE_fake_script)()
+local function ZVKYP_fake_script() -- ScreenGui.Effects_14.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_14)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.OT.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.OT.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.OT.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.OT.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.OT.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(ZVKYP_fake_script)()
+local function XBRHVY_fake_script() -- ScreenGui.Effects_15.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_15)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.Player.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.Player.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.Player.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.Player.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.Player.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(XBRHVY_fake_script)()
+local function XPRCXSQ_fake_script() -- ScreenGui.Effects_16.ClickEffect 
+	local script = Instance.new('LocalScript', ScreenGui.Effects_16)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local button = script.Parent.Parent
+	local SK = false
+	local Plus = script.Parent.Follow
+	local Zone = script.Parent.Click
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SpeedS = 1
+	local TweenService = game:GetService("TweenService") 
+	local tweenClick = TweenInfo.new(SpeedS,Enum.EasingStyle.Quint,Enum.EasingDirection.Out,0,false,0)
+	local open = false
+	local cd = false
+	button.MouseButton1Click:connect(function()	
+		local G = Zone:Clone()
+		G.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+		G.Parent = button
+		local tween = TweenService:Create(G, tweenClick, {Size = UDim2.new(1,0,1,0),ImageTransparency = 1})
+		tween:Play()
+		if script.Parent.Parent.Parent.Parent.Parent["SFXOFF"].Value == false then
+			Sound:Play()
+		end
+	if script.Parent.Parent.Parent.Parent.PokeItem.Text == "" then
+			if open == false and cd == false then
+				open = true
+				cd = true
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+				end
+				script.Parent.Parent.Parent.Parent.PokeItem.Visible = true 
+				cd = false else
+				cd = true
+				open = false
+				for i = 1, 5 do
+					wait(0.001)
+					script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+				end
+				cd = false
+				script.Parent.Parent.Parent.Parent.PokeItem.Visible = false
+			end
+	end
+		wait(SpeedS)
+		G:Destroy()
+	end)
+	
+	script.Parent.Parent["more_vert"].MouseButton1Down:Connect(function()
+	if open == false and cd == false then
+	open = true
+	cd = true
+	for i = 1, 5 do
+	wait(0.001)
+			script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency - 0.1
+	end
+	script.Parent.Parent.Parent.Parent.PokeItem.Visible = true 
+	cd = false else
+	cd = true
+	open = false
+			for i = 1, 5 do
+				wait(0.001)
+				script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency = script.Parent.Parent.Parent.Parent.Shadow.ImageTransparency + 0.1
+			end
+	cd = false
+			script.Parent.Parent.Parent.Parent.PokeItem.Visible = false
+	end
+	end)
+	--button.MouseEnter:Connect(function()
+	--	SK = false
+	--	Plus.Visible = true
+	--	repeat wait()
+	--		Plus.Position = UDim2.new(0,Mouse.X-button.AbsolutePosition.X,0,Mouse.Y-button.AbsolutePosition.Y)
+	--		until SK == true do
+	--	end
+	--end)
+	
+	--button.MouseLeave:Connect(function()
+	--	SK = true
+	--	Plus.Visible = false
+	--end)
+	
+end
+coroutine.wrap(XPRCXSQ_fake_script)()
+local function OSRPZ_fake_script() -- ScreenGui.ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.ScreenGui)
+
+	local findbuttons = script.Parent.Frame:GetChildren()
+	local Sound = Instance.new("Sound", script.Parent)
+	Sound.SoundId = "rbxassetid://12221967"
+	local SFXOFF = Instance.new("BoolValue", script.Parent)
+	SFXOFF.Name = "SFXOFF"
+	SFXOFF.Value = false
+	function Clear()
+	script.Parent.Frame.Stuff.Money.Visible = false
+	script.Parent.Frame.Stuff.Settings.Visible = false
+		script.Parent.Frame.Stuff.Main.Visible = false
+	script.Parent.Frame.Stuff.Spawning.Visible = false
+	script.Parent.Frame.Stuff.Spawner.Visible = false
+	script.Parent.Frame.Stuff.Badges.Visible = false
+	script.Parent.Frame.Main.Gradient.Visible = false
+	script.Parent.Frame.Settings.Gradient.Visible = false
+	script.Parent.Frame.Spawning.Gradient.Visible = false
+	script.Parent.Frame.Money.Gradient.Visible = false
+		script.Parent.Frame.Badges.Gradient.Visible = false
+	end
+	for i = 1, #findbuttons do
+	if findbuttons[i].ClassName == "TextButton" then
+	findbuttons[i].MouseButton1Down:Connect(function()
+	Clear()
+	if script.Parent["SFXOFF"].Value ~= true then
+	Sound:Play()
+	end
+	findbuttons[i].Gradient.Visible = true
+	script.Parent.Frame.Stuff[findbuttons[i].Name].Visible = true
+	end)
+	end
+	end
+end
+coroutine.wrap(OSRPZ_fake_script)()
